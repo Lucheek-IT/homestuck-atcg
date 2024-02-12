@@ -2,112 +2,238 @@
 layout: ../layouts/MarkdownLayout.astro
 title: Rules
 ---
-**Warning: Not Up-to-Date with TTS 10/10/2023 Release!!**
+Rule Book Build: January 2024
 
-I'm working on updating terminology, but the concepts are the same.
+**Homestuck: ATCG** is a competitive card-based game for 2- 4 players, similar to a trading card game, but with a deck-building mechanic that utilizes point-buy instead of randomized booster packs.
 
-Rule Book Build: Pre-Alpha Play-Test 0.2 (Updated: June 27, 2023)
+The game is designed to be played on the virtual platform, Tabletop Simulator, made by Berserk Games, and available through the Steam application.
 
-## Basic Concepts
-The game consists of 2 to 5 players competing against each other to be the single winner. The winner is decided by the player with the most <abbr>Victory Points</abbr> at the end of the game. Each player will have a <abbr>Main Deck</abbr> that consists of 48 cards, and a single, additional special Planet Card. Players assemble their deck before the game begins.
+(Homestuck: ATCG also has an alternative format that is co-operative, and can be played with 1-4 players. This format is called **Boss Mode**.)
 
-Players take <abbr>turns</abbr> being the Active Player. A turn consists of multiple <abbr>phases</abbr>. After the final phase of an Active Player's turn, the next player takes a turn. After every player has had a turn, a new <abbr>Round</abbr> begins- and each player takes another turn. The rounds continue until a player reaches 7 Victory Points, which triggers <abbr>End Game</abbr>. During End Game, every other player takes one more turn, and then the game ends and a winner is decided.
+## Before You Play
+Before the game begins, all players must assemble their own deck in a process called “deck-building.” Every deck contains a total of 49 cards, with exactly one Planet Card included- but not every player's deck will be the same. *Deck-Building specifics will be covered later*.
 
-To earn Victory Points, a player must have more <abbr>Power</abbr> at an opposing player's location at the end of a turn. Players choose to either put their <abbr>Character Cards</abbr> (cards with a Power value) at their own location, to prevent opposing players from scoring Victory Points there, or at another player's location to score Victory Points themselves.
+**It is encouraged new players start with a pre-built deck (“Pre-Con”) for their first few games.** After a player understands the game play, building their own deck will allow them to optimize their chosen strategy.
 
-During an Active Player's turn, the player has a limited amount of actions they can perform. The amount of actions they take is determined by the player's current Grist. Performing actions costs a certain amount of <abbr>Grist</abbr>, which replenishes at the beginning of the player's turn. A player can also choose to save their Grist up between multiple turns, declaring an end to their turn before all their Grist is spent.
+## Goal of the Game
+The winner of the game is the player who has the **most Victory Points (“VP”)** at the end of the game.
 
-A common action a player can take is to <abbr>Tap</abbr> their character card. When a card is tapped, it is physically rotated 90 degrees to the right (clearly indicating the card has been tapped, and can't be tapped again.) Tapping costs 1 Grist. When a character card is tapped by the active player, all other player's character cards with less power at the same location of the tapped card are <abbr>destroyed</abbr>. Destroyed cards go to their player's discard pile, and do not count as having power at any location.
+Players will score Victory Points by sending invaders to their opponent's planets and **overpowering opponent's planet and it's defenders**. However, players must make sure to defend their own planet from invaders, too!
 
-![Tapping involves flipping the card from the vertical to horizontal position, or as the kids say, "dude, you got to flip it turn-ways"](../images/RuleImage_Tap.png)
+Players will each take **turns** being the active player- and each turn is made up of multiple **phases**. When every player in the game has taken a turn, a new **round** begins.
 
-At the end of a player's Main Phase, any character cards at their own planet's location that have not been tapped, collect one <abbr>Boon</abbr>. Boons are special markers that can be spent to activate special actions, or give unique bonuses to a character card. Character Cards only earn boons at their own player's planet's location and only if they are untapped that turn. A Character Card can only have a maximum of 3 Boons.
+Rounds continue with every player taking a turn, until any player has earned at least 7 VP. **The first time any player has 7+ VP at the end of a turn, this triggers the “end-game.”** Every other player besides the current player gets one more turn and then the game is over- and a winner is decided.
 
-## The Cards
-There are 3 types of cards in a player's Main Deck: Character Cards, Inventory Cards, and Executables Cards. These cards are single-sided. The common traits between all card types in the main deck are a Title, Subtitle, Enter Cost, Artwork and Art Credit, and FlavorLogue.
+<div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
+    <h3>Advanced</h3>
+    <p>It's possible to earn VP during another player's turn, and thus it's possible to trigger end-game on another player's turn. The player with 7+ VP still gets their one additional turn in this scenario.</p>
+</div>
 
-The "name" of a Card is both it's <abbr>Title</abbr>, written in all-capital letters, and it's <abbr>Sub-Title</abbr>, written in all lower-case letters. Different cards can have the same Title, but different Sub-Titles. When any card's effect references a card's title, any card with that title (even with different sub-titles) is valid for that effect!
+## Setting Up the Game
+Every player puts their Planet Card into play in the “Planet Card” location on their play mat, with the Intact side face-up. (*The Intact side is the side with power!*)
 
-A card's <abbr>Enter Cost</abbr> is what it takes to move that card from your hand onto the field. (The exact location a card will enter on the field is determined by the type of card.) Most of the time, Enter Cost is a certain amount of Grist that the player must spend. Sometimes, the Enter Cost is a unique trigger- such as the destruction of certain titles of other cards. The Enter Cost must always be resolved in-full, before the card becomes active on the field. Once a card is on the field, it does not need to pay the Enter Cost again (such as to move locations on the field.) The only time you need to pay the Enter Cost is when the card moves from your hand to the field.
+Then, every player will shuffle the remaining cards in their own deck, and put the deck face-down. **Each player will draw five (5) cards from their own deck** and keep these in their hand, hidden from their opponents. This is their starting hand.
 
-Every card has <abbr>Artwork</abbr> and <abbr>FlavorLogue</abbr>- an illustration and a little bit of text to add flair and character to the card. These are not used in the game's mechanics, but can add a little joy. The <abbr>Art Credit</abbr> is a note of who created the featured artwork!
+<div class="lg:flex">
+    <div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-[45%] mx-auto">
+        <h3>Tabletop Simulator Controls</h3>
+        <dl class="grid grid-cols-2">
+            <dt>Shuffle a Deck</dt>
+            <dd>Hover over Deck + “R” Key</dd>
+            <dt>Draw 5 Cards into your Hand</dt>
+            <dd>Hover over Deck + “5” Key</dd>
+        </dl>
+    </div>
+    <div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-[45%] mx-auto">
+        <h3>Advanced</h3>
+        <p>If you don't like the five cards you drew first, you may mulligan. A mulligan means putting all of the five cards back into the deck, shuffling again, and drawing another five cards to be your starting hand. Every time you mulligan, every other player gets 1 grist.</p>
+    </div>
+</div>
 
-![Card diagram, highlighting what each part of the card is.](../images/RuleImage_Card.png)
+After all players have a starting hand- each player will roll a six-sided dice, re-rolling for any ties, and the player who rolled the highest number will have the first turn as the active player.
 
-<abbr>Character Cards</abbr> are cards that have <abbr>Power</abbr>. A character's card power can contribute to an invading force at a different location, or the defending force of their own player's planet.
+(The next active player is always the next player in a clock-wise order.)
 
-Character Cards also have <abbr>Keywords</abbr>, written as hashtags. Keywords are, on their own, mechanically unimportant- but other cards can reference keywords for special effects. Only keywords written on the card are valid, even if a keyword might hypothetically apply to a Character Card's character. (For example: If a card titled KARKAT VANTAS does not have the printed keyword #troll, effects that refer to #troll cards do not apply to that card- even if Karkat, the character, is a troll.)
+The very first active player in a game will skip drawing any cards in their very first Prep Phase.
 
-While all character cards can be tapped for 1 Grist to destroy character cards with less power at that location, some character cards can also have a <abbr>Special</abbr> Tap effect. Special Tapping still rotates a Character Card and is considered tapping the card (and thus only able to be used once until the card is refreshed)- but will trigger different effects, and have a different cost. If a card is available to be special tapped, the cost and effects of that special tap will be written on the card.
+## Your Turn
+A turn is made of multiple phases that must be completed in order. The first phase is the Prep Phase, which *prepares* you and your cards for action.
 
-Character Cards who receive bonuses for having <abbr>Boons</abbr>- accrued for having an untapped card at your home location at the end of your turn- will have the bonuses noted. Otherwise, boons do not effect a card. A Character Card can have a maximum of 3 Boons on it, and if it were to move in any way, looses all it's current boons.
+After the Prep Phase, the Main Phase happens. The Main Phase is where most of the player decisions and interaction happens. When the Main Phase is completed- either because the active player chooses to end it or they have no more grist to spend- the Score Phase begins. *Every action in the Main Phase must be resolved completely before the Score Phase begins*.
 
-<abbr>Inventory Cards</abbr> are cards that are attached to another card- usually a character card or planet, and then provide additional effects or bonuses to the card they attached to. When a character card moves, any attached inventory cards will move with them.
+The Score Phase is when power totals at each planet are calculated, and players can earn Victory Points. **The Score Phase is skipped for the first Round**.
 
-<abbr>Executable Cards</abbr> are played face-up near a player's own planet's location, but are not considered attached to the planet or location. Executable Cards have ~ATH ("Tilde-ath") Code associated with them. This means they have a special effect that is triggered only after the card is active on the field, and then a specific type of card is discarded.
+The final phase in a turn is Boon Phase.
 
-For instance, an Executable Card that says "~ATH: any #TROLL character card. Execute: Draw 3 Cards" would mean that, if after this executable card is put onto the field by paying it's Enter Cost, if any #troll character card is put in the discard pile (destroyed), the player who controls this executable card will then draw 3 cards.
+<div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto text-center">
+    <h3>Phases of a Turn</h3>
+    <p class="mb-4 text-xl">PREP ==> MAIN ==> SCORE<sup>*</sup> ==> BOON</p>
+    <p class="text-xs"><sup>*</sup> Skipped in the First Round</p>
+</div>
 
-Executable Cards can only be triggered once their specific ~ATH card is put into the discard pile. Executable Cards are discarded themselves once their special effect is resolved. Executable Cards can be triggered during any player's turn! A single card reaching the discard pile can trigger multiple executable cards, if relevant to all conditions.
+### Prep Phase
+#### Get Grist
+The Prep Phase always begins by the Active Player earning Grist. Grist (g) is the currency in which players buy actions, such as playing cards, moving cards, using abilities and attacking. Most actions in the game will require grist to perform.
 
-## Locations
-Every player has a <abbr>Planet Card</abbr> that represents their own location. This Planet Card is double-sided-- with an active side, and a destroyed side on the back. Planet Cards never enter the Discard Pile, but can still trigger ~ATH code by being destroyed. Even when the Planet Card is destroyed, the player still has a "planet-location" where character cards can go. Cards a player controls at their own planet are considered defending, and cards they control at another player's planet are conisdered invading.
+The amount of grist they earn during the Prep Phase depends on the highest number of VP any player in the game has. Grist is always based off the current highest VP earned by any player- not necessarily the VP of the active player. Only the active player gains Grist during their own Prep Phase.
 
-Players will also have their "personal locations"- their own hand, active executable cards, draw pile, discard pile, and "removed-from-play" pile. Other players can NOT add cards to any other player's personal locations, only their Planet / Planet Location. A player CAN chose to have a character enter play at another player's planet.
+<table class="p-4 mb-8 text-sm lg:w-1/3 mx-auto text-center">
+    <thead>
+    <tr>
+        <th scope="col">Victory Points Earned <span class="float-right">==></span></th>
+        <th scope="col">Grist Earned</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr><td>0 VP</td><td>3g</td></tr>
+    <tr><td>1-2 VP</td><td>5g</td></tr>
+    <tr><td>3-5 VP</td><td>6g</td></tr>
+    <tr><td>6+ VP</td><td>9g</td></tr>
+    </tbody>
+</table>
 
-![Layout of the boards, showing invaders/planets on the left and defenders/executables on the right](../images/RuleImage_Locations.png)
+Grist is recorded by hexagon tokens kept near the player's deck. The green side indicates 1g, and the flipped-over blue side is 3g.
 
-## Start Up
-When you start a game, everybody rolls a dice simultaneously. The highest roll is the first active player, and the play continues clockwise. If multiple people tie, the others are removed, and the ties re-roll until there is a highest roll among them.
+<div class="flex mb-8 justify-center">
+<div>
 
-Every player will put their Planet Card, face-up, onto the table, and then draw 5 Cards into their hand. If a player wants to put these first 5 cards back, they may do so up to two times- each time shuffling their deck before drawing another 5 cards. This is called a "mulligan," and can only be done before the first active player's turn. Whenever a player mulligans, ever other player gians +1 Grist immediately.
+![Green one-grist token](../images/rules/Grist_Token_New_1.png)
+</div>
 
-After every player has 5 cards in their hand, and has resolved any mulligans, it's the first active player's turn.
+<div>
 
-## Active Player's Turn Reference
-### PREP PHASE
-Gain GRIST based on the current highest score amongst all players. (You can choose to save Grist up between turns- but you can never have more than 12 Grist!)
+![Blue three-grist token](../images/rules/Grist_Token_New_3.png)
+</div>
 
-| Victory Points | Gain     |
-|----------------|----------|
-| 0              | 3 Grist  |
-| 1-2            | 5 Grist  |
-| 3-5            | 6 Grist  |
-| 6+             | 9 Grist  | 
+</div>
 
-REFRESH any Tapped Character Card you Control
+**A player can never have more than 12 grist**. If they would ever earn more grist when they already have 12, instead nothing happens.
 
-Draw 1 Card- if your Planet Card is not destroyed, you may also draw an additional amount of cards according to your Planet Card's Draw Attribute. Drawing additional cards is optional, but you must decide whether or not you'll take advantage of this effect when you draw. (You can not draw 1, and then decide to draw more later.)
+**Players can choose to build up grist between turns**- they do not need to spend all the available grist every turn.
 
-If your Draw Pile is empty and you need to draw any amount of cards- shuffle your Discard Pile and move it to your Draw Pile. If you do, all other player's gain +2 Victory Points. This can happen during any phase or player's turn.
+<div class="lg:flex">
+    <div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-[45%] mx-auto">
+        <h3>Tabletop Simulator Controls</h3>
+        <dl class="grid grid-cols-2">
+            <dt>Flipping a Token/Card Over</dt>
+            <dd>Hover over Token/Card + “F” Key</dd>
+        </dl>
+    </div>
+    <div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-[45%] mx-auto">
+        <h3>Advanced</h3>
+        <p>If any card says a player will earn additional grist in their Prep Phase, such as an effect on a Planet Card, the player will resolve that effect at the same time as the regular amount of grist gained. (They will gain this grist before refreshing or drawing.)</p>
+    </div>
+</div>
 
-### MAIN PHASE
-During the Main Phase, the Active Player can choose to activate and resolve as many of these effects as they desire and have Grist for, in any order.
+#### Refresh Cards
+After a player gains Grist, they will refresh any and all cards they control at any location that are tapped. When a card is refreshed, it's turned upright and vertical. You must refresh every card that you control if it's tapped- you can't choose to keep it tapped.
 
-- Pay the Enter Cost to play a card from their Hand
-- Move a Character Card for 2 Grist- and then move-tap that card
-- Tap a Character Card for 1 Grist to destroy other player's character cards with less power at the same location
-- Special Tap a Character Card for the printed Special Tap Cost
-- Resolve Effects of Taps and/or Passives (as needed.)
-- All Players Check for Triggers, and Resolve Executable Cards as needed.  
+(Tapping happens during the Main Phase, so there will not be any cards to refresh on your very first turn.)
 
-The Main Phase ends when you have 0 Grist, or you declare it to end.
+#### Draw Cards
+Now, you'll draw at least 1 card from your deck into your hand.
 
-### SCORE PHASE
-*The Score Phase is skipped until the first turn of the second round!*
+If you are the very first player in the game, on your very first turn, you won't draw at all. Every other turn after will always require a player draw at least one card.
 
-The Power on Each Planet Location is Checked- Invaders with Higher Power (any player) score a Victory Point, and the Planet takes 1 Damage (if it's not destroyed already). If there are multiple invaders, multiple players can score points and cause damage to the same planet. The power is only checked against the Defenders, not other Invaders.
+<div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
+    <h3>Tabletop Simulator Controls</h3>
+    <dl class="grid grid-cols-2">
+        <dt>Draw 1 Card into your Hand</dt>
+        <dd>Hover over Deck + “1” Key</dd>
+    </dl>
+</div>
 
-Any player who scores a Victory Point and has a destroyed planet, has their planet restored.
+If your Planet Card is intact (face-up), you may choose to draw an additional amount of cards listed on the Planet's “Draw” attribute. You do not have to draw all the extra cards, but **you must decide if you'll draw the extra cards before you draw any cards at all**.
 
-If any player now has 7 Victory Points,or more, the game enters End-Game- every other player takes one more turn and the game is over.
+If your deck is empty when you need to draw a card, you have to immediately **mill**. When you mill, you shuffle your Discard Pile and return it to your Deck face-down, and continue drawing. **Whenever you mill, every other player gains +2 VP**. Thus, you want to make sure you're milling as little as possible. Milling can happen during any phase- whenever you need to draw and do not have cards in your deck.
 
-### BOON PHASE
-Put Boons on your Untapped Cards on Your Planet (Active Player Only)
+<div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
+    <h3>Advanced</h3>
+    <p>The Nullified Pile is separate from the Discard Pile for a reason. Nullified Cards do not return to your Deck when you mill.</p>
+</div>
 
-## Deck Building
-A deck must always contain exactly one planet card and 48 other cards.
+There is no “hand-limit”- you can have any number of cards in your hand. You can not choose to discard cards from your hand without playing them.
 
-The total value of "stars" in a deck can not exceed 150.
+### Main Phase
+Unlike the Prep Phase, where the same actions must be performed in a specific order, during a player's Main Phase they can mostly choose the order and type of actions they complete.
 
-There can never be more than 2 copies of the exact same card (title and sub-title) in a deck.
+The actions an active player can choose during their Main Phase are:
+
+- Play a Card from their Hand
+- Move a Character Card
+- Attack with a Character Card
+- Activate the Ability of a Character Card
+- End you Main Phase early
+
+As long as you have grist, you may continue to take actions during your Main Phase. *If you ever have 0 Grist, and all actions have fully resolved, your Main Phase ends automatically.*
+
+However, if you want to end the Main Phase with grist remaining- you may choose to end early (after all previous actions have fully resolved.) Remember though, you can never have more than 12 Grist!
+
+#### Playing a Card
+Playing a card (also known as “entering” the card) means moving a card from your hand onto the table. Cards must always be in- play before they have any sort of effect on the game.
+
+To play a card, you must first pay it's Enter Cost in full. This is found on middle right-hand side of the card, in a box labeled “Enter.” Most cards have an enter cost of grist.
+
+**You can choose to enter a Character Card to any planet**. Your own character at your own planet is a *defender*, while your character at any opponent's planet is an *invader*. A character does not need to start at your own planet, but can be directly played as an invader.
+
+**Inventory cards can only enter play as “attached” to the specific card type listed on that Inventory Card**. They can not be in-play without something to attach to. However, you can choose to attach them to any in-play card that fits the requirements, at any location.
+
+**Executable cards enter play only in your Executable Zone**. When you play an Executable Card, make sure you arrange them in your Executable Zone in the order you play them, right-to-left. (*This is very important for when Executable Cards are triggered, as they resolve right-to-left.*) You can not re-arrange or move Executable Cards once they are played.
+
+![Diagram of two players' playmats, hands, and tokens](../images/rules/RuleImage_Locations_2.png)
+
+There are some cards that have an Enter cost listed as “~ATH: (X)” ~ATH (*read as Tilde-ath, or “'til Death”*) is Executable coding.
+
+As an Enter cost, this means that card can not be played until the (X) card has been discarded or destroyed. When the triggering card is discarded or destroyed, you may choose to immediately play that card. You do not have to enter a card with an Executable Enter Cost when it is triggered- you can choose to keep it in your hand. However, you can only play these cards immediately after the triggering card is discarded or destroyed. (If you choose not to enter the card then, you must wait until it's triggered again.)
+
+You can play Executable coded Enter Cost cards during any player's turn- as long as it's immediately after a triggering card was discarded or destroyed. You can also play these cards to any appropriate location, just like cards with an enter cost of grist.
+
+<div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
+    <h3>Advanced</h3>
+    <p>A card is still considered “destroyed” when it is nullified.</p>
+</div>
+
+**Example 1:**
+
+“GAMZEE MAKARA / The Mirthful Messiahs” has an enter cost of “~ATH: Any #TROLL.” You have the card in your hand.
+
+During your opponent's main phase, they attack and destroy your defending #TROLL card. You can now choose to put “GAMZEE MAKARA / the mirthful messiahs” into play, even as an invader. However- because it's not your main phase- your card can not attack or use an ability yet.
+
+**Example 2:**
+
+During your main phase, you attack and destroy your opponent's invader #TROLL. You can now choose to put “GAMZEE MAKARA / the mirthful messiahs” into play, because the code says “any” #TROLL- not specifically your own #TROLL. You can immediately choose to have the card attack, because it is your own Main Phase.
+
+#### Move a Character Card
+Once your character card has entered, they can change their location to a new planet by being moved. **Moving a character card always costs 2 grist**- no matter what their enter cost is. The 2 grist must be paid before a character moves.
+
+Once a character card has moved, it will become tapped and loose all boons it might've had.
+
+<div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
+    <h3>Advanced</h3>
+    <p>A character will always be tapped and loose all boons when it moves- even if the movement is caused by effect from an ability or other card during any player's turn.</p>
+</div>
+
+Any Inventory card that is attached to the character moves with the character it's attached to. Inventory can not be moved on it's own.
+
+Executable Cards can not be moved or re-arranged.
+
+#### Tapping
+![Tap a card whenever it: attacks, uses an ability, or moves by flipping it 90 degrees (or as the youth say "dude, you got to flip it turn-ways")](../images/rules/RuleImage_Tap_2.png)
+
+<div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
+    <h3>Tabletop Simulator Controls</h3>
+    <dl class="grid grid-cols-2 mb-6">
+        <dt>Rotate a Card</dt>
+        <dd>Hover over the Card + “E” Key</dd>
+    </dl>
+
+The amount of rotation per key-press depends on the rotate setting- click on the setting on the top of the screen to change it to 90 degrees to reduce key-presses.
+</div>
+
+When a card is “tapped”, the card is physically rotated 90 degrees and put on it's side. **Once a card is tapped, it can not be tapped again until it is refreshed**. You can't choose to take any action with your own card that would cause it to be tapped more than once. *Choose wisely*.
+
+#### Attack with a Character Card
+
+## Score
+
+## Boon

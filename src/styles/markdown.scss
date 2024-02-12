@@ -45,7 +45,7 @@
     @apply text-xl font-bold leading-none pb-6;
   }
 
-  h4 {
+  h4, h5, h6 {
     @apply font-bold uppercase tracking-widest leading-none pb-6;
   }
 
@@ -143,8 +143,8 @@
     }
   }
 
-  abbr {
-    @apply underline underline-offset-4 decoration-2 decoration-dotted italic;
+  abbr, strong {
+    @apply underline underline-offset-4 decoration-2 decoration-dotted italic bg-none;
   }
 }
 
