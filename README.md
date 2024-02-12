@@ -9,7 +9,7 @@ There are two types of [pages](./src/pages):
 When writing `.md` files, the headers (`## This is a Second-Level header`) will be used for the table of contents.
 
 ### Updating the Card Database
-The card CSV exports live in [`src/cards`](./src/sards). Updating the card tables on the site is as simple as updating these CSV files. If images have been added or revised, the [`src/cards/images`](./src/cards/images) should be updated with the changed files. The filenames there must match the card art filename column in the CSV, or else the generic "not found" image shows up on the site for that card.
+The card CSV exports live in [`src/cards`](./src/cards). Updating the card tables on the site is as simple as updating these CSV files. If images have been added or revised, the [`src/cards/images`](./src/cards/images) should be updated with the changed files. The filenames there must match the card art filename column in the CSV, or else the generic "not found" image shows up on the site for that card.
 
 <details><summary>Show Expected Headers by CSV</summary>
 
