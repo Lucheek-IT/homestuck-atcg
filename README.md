@@ -37,7 +37,7 @@ TITLE,subtitle,Power,Max Damage,Draw Boost,Game Text,Flavorlogue,Stars,Art Credi
 </details>
 
 ### Download
-The rulebook, and any other PDF you want made downloadable, shoudl live in the [`public/`](./public) folder. The link is currently just in (`src/pages/index.astro`)[./src/pages/index.astro], so that has to be changed if you're updating the file or adding more.
+The rulebook, and any other PDF you want made downloadable, shoudl live in the [`public/`](./public) folder. The link is currently just in [`src/pages/index.astro`](./src/pages/index.astro), so that has to be changed if you're updating the file or adding more.
 
 ### Site Layout, Etc
 The layouts are kept in `src/layouts`. The `Chrome.astro` file is the "chrome" of the site: the nav bar and some other miscellany. 
