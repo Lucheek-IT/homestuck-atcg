@@ -18,9 +18,12 @@ jobs:
         - run: yarn install
         - run: yarn build
 
-        - name: Deploy
-          uses: peaceiris/actions-gh-pages@v3
+        - name: Deploy to Server
+          uses: burnett01/rsync-deployments@6.0.0
           with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./dist/
-            cname: atcg.godless-internets.org
+            switches: -avzr --delete
+            path: dist/
+            remote_path: /var/www/hsatcg
+            remote_host: hsatcg.lucheek.com
+            remote_user: atcg-web
+            remote_key: ${{ secrets.DEPLOY_KEY }}
