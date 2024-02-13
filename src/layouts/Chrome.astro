@@ -15,16 +15,21 @@ interface Props {
     title?: string;
 }
 
+const siteName = 'Homestuck: Atypical Card Game';
 const title = Astro.props.title;
-const headTitle = (title ? `${title} | ` : '') + 'Homestuck: Atypical Card Game';
+const headTitle = (title ? `${title} | ` : '') + siteName;
 ---
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href={logo.src} />
     <meta name="generator" content={Astro.generator} />
     <title>{headTitle}</title>
+
+    <meta property="og:title" content={title ? title : 'Home'}>
+    <meta property="og:site_name" content={siteName}>
+    <meta property="og:image" content={logo.src}>
 </head>
 <body class="font-courier font-bold text-xl bg-lavender">
     <div class="sticky top-0 bg-lavender z-20">
