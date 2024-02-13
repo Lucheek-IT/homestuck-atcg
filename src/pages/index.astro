@@ -35,15 +35,11 @@ import SiteLayout from '../layouts/SiteLayout.astro'
 
 		<div>
 			<h2 class="text-2xl border-b-2 border-lavender border-dashed mb-4">Trailer</h2>
-			<iframe
-				class="aspect-video w-full"
-				src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=IxOhMrUKuNQGdPN1&amp;controls=0"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				allowfullscreen
-			></iframe>
-			<p class="text-xs mt-5">(this is meant to be your SAHCon video, but i dunno if you have it standalone on YT right now. so our good buddy rick is filling in.)</p>
+			<video class="aspect-video w-full" poster="/trailer-thumb.png" controls preload="metadata">
+				<source src="/HomestuckATCG_SAHCon.mp4" type="video/mp4">
+				<p>Your browser does not support the video tag!</p>
+				<p class="mt-4"><a href="/HomestuckATCG_SAHCon.mp4" target="_blank" class="underline text-web-blue uppercase">==> Download Trailer</a></p>
+			</video>
 		</div>
 	</div>
 </SiteLayout>
