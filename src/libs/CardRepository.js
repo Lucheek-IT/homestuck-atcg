@@ -3,9 +3,15 @@ import { parse } from "csv-parse/sync";
 
 const csvLoader = (csvFile) => {
     const cardCsv = readFileSync(csvFile, { encoding: 'utf-8' });
-    return parse(cardCsv, {
+    const cardRecords = parse(cardCsv, {
         columns: true,
         skip_empty_lines: true
+    });
+
+    return cardRecords.map((card) => {
+        card['Game Text'] = card['Game Text'].replaceAll('//', "\n\n");
+        card['Game Text HTML'] = card['Game Text'].replaceAll("\n", "<br>");
+        return card;
     });
 };
 

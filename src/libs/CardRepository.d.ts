@@ -2,6 +2,7 @@ interface Card {
     TITLE: string;
     subtitle: string;
     'Game Text': string;
+    'Game Text HTML': string;
     Flavorlogue: string;
     Stars: string;
     'Art Credit': string;
