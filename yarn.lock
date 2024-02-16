@@ -3274,10 +3274,10 @@ simple-concat@^1.0.0:
   resolved "https://registry.yarnpkg.com/simple-concat/-/simple-concat-1.0.1.tgz#f46976082ba35c2263f1c8ab5edfe26c41c9552f"
   integrity sha512-cSFtAPtRhljv69IK0hTVZQ+OfE9nePi/rtJmw5UjHeVyVroEqJXP1sFztKUy1qU+xvz3u/sfYJLa947b7nAN2Q==
 
-simple-datatables@^8.0.0:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/simple-datatables/-/simple-datatables-8.0.1.tgz#9e1dd25bcdf30782aee14f6f138c8e3f97bbbc2f"
-  integrity sha512-1l9N7yacy4pECoOw/khm/n7XtEcpgoh5znJ1diqern1fwRqgOCgdI7keW9LCeV5es2M4K+db3qWjaWHbcFUh0Q==
+simple-datatables@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/simple-datatables/-/simple-datatables-9.0.0.tgz#691878785833220292c5d1c436fa8e570e877679"
+  integrity sha512-Muux/vfv07QFIWOduJiPnWoxRNGTijc0GEcqZ0XShonXZSqYq7BkDhvaI7OSoLmGZXo45z3Yrk+IRF4A1iosUg==
   dependencies:
     dayjs "^1.11.10"
     diff-dom "^5.1.2"
