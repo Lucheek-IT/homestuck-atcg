@@ -35,7 +35,9 @@ const artCollection = ArtRepository.loadAll(await Astro.glob('../../cards/images
                     <td>{card.Power}</td>
                     <td>{card['Max Damage']}</td>
                     <td>{card['Draw Boost']}</td>
-                    <td>{card['Game Text']}</td>
+                    <td>
+                        <Fragment set:html={card['Game Text HTML']} />
+                    </td>
                     <td>{card.Flavorlogue}</td>
                     <td>{card.Stars}</td>
                     <td>{card['Art Credit']}</td>
