@@ -32,6 +32,13 @@ cardArt = await Promise.all(
     })
 );
 ---
-<div class="flex flex-row">
-    { cardArt.map((image) => <a class="ml-4" href={ image.public.src } target="_blank"><Image src={ image.asset } width="34" height="48" alt="Card {card.TITLE}"/></a>) }
+<div class="flex flex-row" x-data="{}">
+    { cardArt.map((image) => <a
+            class="ml-4 cursor-pointer"
+            data-lightbox-image-src={ image.public.src }
+            data-lightbox-caption={ card.TITLE }
+            x-on:click.stop="$dispatch('img-modal', { imgModalSrc: $el.dataset.lightboxImageSrc, imgModalAlt: $el.dataset.lightboxCaption })"
+    >
+        <Image src={ image.asset } width="34" height="48" alt="Card {card.TITLE}"/>
+    </a>) }
 </div>
