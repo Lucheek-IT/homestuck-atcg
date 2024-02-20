@@ -2,13 +2,15 @@
 layout: ../layouts/MarkdownLayout.astro
 title: Rules
 ---
-Rule Book Build: January 2024
+Rule Book Build: February 2024
 
 **Homestuck: ATCG** is a competitive card-based game for 2- 4 players, similar to a trading card game, but with a deck-building mechanic that utilizes point-buy instead of randomized booster packs.
 
+*Note: Play-Testing as of now has only been made for 2 player games.*
+
 The game is designed to be played on the virtual platform, Tabletop Simulator, made by Berserk Games, and available through the Steam application.
 
-(Homestuck: ATCG also has an alternative format that is co-operative, and can be played with 1-4 players. This format is called **Boss Mode**.)
+(Homestuck: ATCG also has an alternative format that is co-operative, and can be played with 1-5 players. This format is called [Boss Mode](./Rules_BossMode).)
 
 ## Before You Play
 Before the game begins, all players must assemble their own deck in a process called “deck-building.” Every deck contains a total of 49 cards, with exactly one Planet Card included- but not every player's deck will be the same. *Deck-Building specifics will be covered later*.
@@ -75,7 +77,7 @@ The final phase in a turn is Boon Phase.
 #### Get Grist
 The Prep Phase always begins by the Active Player earning Grist. Grist (g) is the currency in which players buy actions, such as playing cards, moving cards, using abilities and attacking. Most actions in the game will require grist to perform.
 
-The amount of grist they earn during the Prep Phase depends on the highest number of VP any player in the game has. Grist is always based off the current highest VP earned by any player- not necessarily the VP of the active player. Only the active player gains Grist during their own Prep Phase.
+The amount of grist they earn during the Prep Phase depends on the highest number of VP *any* player in the game has. Grist is always based off the current highest VP earned by any player- *not necessarily the VP of the active player*. Only the active player gains Grist during their own Prep Phase.
 
 <table class="p-4 mb-8 text-sm lg:w-1/3 mx-auto text-center">
     <thead>
@@ -143,7 +145,7 @@ If you are the very first player in the game, on your very first turn, you won't
     </dl>
 </div>
 
-If your Planet Card is intact (face-up), you may choose to draw an additional amount of cards listed on the Planet's “Draw” attribute. You do not have to draw all the extra cards, but **you must decide if you'll draw the extra cards before you draw any cards at all**.
+If your Planet Card is intact (face-up), you may *choose* to draw an *additional* amount of cards listed on the Planet's “Draw” attribute. You do not have to draw all the extra cards, but **you must decide if you'll draw the extra cards before you draw any cards at all**.
 
 If your deck is empty when you need to draw a card, you have to immediately **mill**. When you mill, you shuffle your Discard Pile and return it to your Deck face-down, and continue drawing. **Whenever you mill, every other player gains +2 VP**. Thus, you want to make sure you're milling as little as possible. Milling can happen during any phase- whenever you need to draw and do not have cards in your deck.
 
@@ -159,18 +161,18 @@ Unlike the Prep Phase, where the same actions must be performed in a specific or
 
 The actions an active player can choose during their Main Phase are:
 
-- Play a Card from their Hand
-- Move a Character Card
-- Attack with a Character Card
-- Activate the Ability of a Character Card
-- End you Main Phase early
+- *Play* a Card from their Hand
+- *Move* a Character Card
+- *Attack* with a Character Card
+- *Activate the Ability* of a Character Card
+- *End* you Main Phase early
 
 As long as you have grist, you may continue to take actions during your Main Phase. *If you ever have 0 Grist, and all actions have fully resolved, your Main Phase ends automatically.*
 
-However, if you want to end the Main Phase with grist remaining- you may choose to end early (after all previous actions have fully resolved.) Remember though, you can never have more than 12 Grist!
+However, if you want to end the Main Phase with grist remaining- you may choose to end early (after all previous actions have fully resolved.) Remember though, you can *never* have more than 12 Grist!
 
-#### Playing a Card
-Playing a card (also known as “entering” the card) means moving a card from your hand onto the table. Cards must always be in- play before they have any sort of effect on the game.
+#### Play a Card
+Playing a card (also known as “entering” the card) means moving a card from your hand onto the table. Cards must always be in-play before they have any sort of effect on the game.
 
 To play a card, you must first pay it's Enter Cost in full. This is found on middle right-hand side of the card, in a box labeled “Enter.” Most cards have an enter cost of grist.
 
@@ -184,7 +186,7 @@ To play a card, you must first pay it's Enter Cost in full. This is found on mid
 
 There are some cards that have an Enter cost listed as “~ATH: (X)” ~ATH (*read as Tilde-ath, or “'til Death”*) is Executable coding.
 
-As an Enter cost, this means that card can not be played until the (X) card has been discarded or destroyed. When the triggering card is discarded or destroyed, you may choose to immediately play that card. You do not have to enter a card with an Executable Enter Cost when it is triggered- you can choose to keep it in your hand. However, you can only play these cards immediately after the triggering card is discarded or destroyed. (If you choose not to enter the card then, you must wait until it's triggered again.)
+As an Enter cost, this means that card can not be played until the (X) card has been discarded or destroyed. When the triggering card is discarded or destroyed, you may choose to *immediately* play that card. You do not have to enter a card with an Executable Enter Cost when it is triggered- you can choose to keep it in your hand. However, you can *only* play these cards immediately after the triggering card is discarded or destroyed. (If you choose not to enter the card then, you must wait until it's triggered again.)
 
 You can play Executable coded Enter Cost cards during any player's turn- as long as it's immediately after a triggering card was discarded or destroyed. You can also play these cards to any appropriate location, just like cards with an enter cost of grist.
 
@@ -204,16 +206,16 @@ During your opponent's main phase, they attack and destroy your defending #TROLL
 During your main phase, you attack and destroy your opponent's invader #TROLL. You can now choose to put “GAMZEE MAKARA / the mirthful messiahs” into play, because the code says “any” #TROLL- not specifically your own #TROLL. You can immediately choose to have the card attack, because it is your own Main Phase.
 
 #### Move a Character Card
-Once your character card has entered, they can change their location to a new planet by being moved. **Moving a character card always costs 2 grist**- no matter what their enter cost is. The 2 grist must be paid before a character moves.
+Once your character card has entered, they can change their location to a new planet by being moved. **Moving a character card always costs 2 grist**- no matter what their enter cost is. The 2 grist must be paid *before* a character moves.
 
-Once a character card has moved, it will become tapped and loose all boons it might've had.
+Once a character card has moved, it will become tapped and *loose all boons* it might've had.
 
 <div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
     <h3>Advanced</h3>
-    <p>A character will always be tapped and loose all boons when it moves- even if the movement is caused by effect from an ability or other card during any player's turn.</p>
+    <p>A character will <em>always</em> be tapped and loose all boons when it moves- even if the movement is caused by effect from an ability or other card during any player's turn.</p>
 </div>
 
-Any Inventory card that is attached to the character moves with the character it's attached to. Inventory can not be moved on it's own.
+Any Inventory card that is attached to the character moves with the character it's attached to. *Inventory can not be moved on it's own*.
 
 Executable Cards can not be moved or re-arranged.
 
