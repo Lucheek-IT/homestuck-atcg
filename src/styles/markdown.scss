@@ -151,3 +151,15 @@
 .content section>*:first-child {
   @apply mt-0 pt-0;
 }
+
+ul.homestuck-list {
+  @apply pl-0 list-disc ml-10 text-lg mb-8;
+
+  li {
+    @apply ml-4 pl-4 mb-0;
+  }
+
+  li::marker {
+    content: "==>";
+  }
+}

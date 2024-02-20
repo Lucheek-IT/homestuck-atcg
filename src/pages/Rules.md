@@ -235,7 +235,156 @@ The amount of rotation per key-press depends on the rotate setting- click on the
 When a card is “tapped”, the card is physically rotated 90 degrees and put on it's side. **Once a card is tapped, it can not be tapped again until it is refreshed**. You can't choose to take any action with your own card that would cause it to be tapped more than once. *Choose wisely*.
 
 #### Attack with a Character Card
+**You can attack with any character card by paying 1 Grist and tapping the card.** (*All* character cards can attack, and to attack *always* costs 1g, so the attack rules are not printed on each card.) Cards do *not* loose their boons after they attack.
 
-## Score
+When a character card attacks, compare it's current power with the power of all opponent's characters at the same location. **Any opponent's character card with less power than the attacking card is destroyed**. If an opponent's character card has *equal or greater power*, the opponent's card is *not* destroyed in an attack.
 
-## Boon
+It's important to understand that when a character attacks, it's attacking *all* opponent's cards at that location- battles are not fought solely between two cards. **A single attack can destroy multiple cards**.
+
+<div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
+    <h3>Advanced</h3>
+    <p>In games with 3 or more players, other player's cards at the location are still “opponent's cards”- even if you are both invaders to that location.</p>
+</div>
+
+Attacking is the most common way to reduce an opponent's power at any location, thereby allowing you to overpower an opponent. However, remember that destroying cards can trigger effects from Executable Code for any player- even if it not their turn. Player's strategy might involve baiting attacks to “sacrifice” cards for these effects!
+
+<div class="lg:flex">
+    <div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-[45%] mx-auto">
+        <h3>Advanced</h3>
+        <p>The power on the character card is called the card's “Printed Power.” Power can be changed from effects from other cards, which make up the card's “Current Power.”</p>
+        <p class="mt-4">Current Power is variable, and always the value referenced for any rule that calls for a card's “Power.” Printed Power is sometimes referenced, but only specifically by the term “Printed Power.”</p>
+    </div>
+    <div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-[45%] mx-auto">
+        <h3>Advanced</h3>
+        <p>When a card's game text references “resisting” power, this power is added to the card's current power only when it is defending against an attack or ability- not when it is attacking or using an ability. Otherwise, power is both offensive and defensive.</p>
+    </div>
+</div>
+
+#### Activate a Character Card's Ability
+Every character card can attack, but only some character cards can use an ability. **Abilities** are a special type of game text that must be chosen to be activated, after trigger conditions are met, to take any effect. Abilities are written as “Ability (Trigger)- Effect.” When a card uses an ability, it is tapped.
+
+The trigger for abilities must be met in full before the ability's effect happens, and an ability's trigger can vary between cards.
+
+**“Xg” means an amount of grist to be paid**, just like taking the Enter, Move, or Attack options. (IE: The grist is removed to activate the ability.)
+
+“Xb” means an amount of boons that the card must have on it. **These boon triggers are not 'paid'- as in, these boons are not removed from the card**- unless the ability states otherwise. However, boon triggered abilities still must be chosen to be used. (You can choose to not activate an ability even if you have the proper trigger.) Boon Triggers only reference the boons on the character card using an ability, so you can't “borrow” or “share” boons from other cards.
+
+<div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
+    <h3>Advanced</h3>
+    <p>Some abilities can destroy cards in a very similar way to attacking. However, this is still considered using an ability- not an attack. Any reference to “attacks” does not effect abilities, even if the outcome would be the same.</p>
+</div>
+
+#### Ending Main Phase
+A player's Main Phase ends automatically if they reach 0 Grist- *even if they have more actions they could take without paying grist (such as boon- triggered abilities)*. A player might also choose to declare their Main Phase to end early, saving up some grist for their next turn.
+
+In either case, the Main Phase always continues, “wrapping up,” until all current effects and triggers are resolved. The most common example of this is resolving effects of played Executable Cards.
+
+#### Resolving Executable Cards
+When a card is discarded, it can trigger ~ATH Code in Executable Cards and in ~ATH Enter Cards.
+
+~ATH Enter Cards resolve first- starting with the active player, and continuing clockwise. Each player can choose to enter as many ~ATH Enter Cards in their hand as were triggered- they can also choose to only enter some, or none, of them.
+
+Executable Cards resolve after all ~ATH Enter Cards triggered by the same event. **Executable Cards are not optional**- they will always be resolved and discarded when they are triggered, even if their effect has no valid target.
+
+The right most triggered Executable Card of the Active Player resolves first, and then continues with the next clockwise player's right-most triggered Executable Card. Each player only activates one Executable Card (at most) before continuing to the next clockwise player's right-most triggered card.
+
+Because of these timing rules, Executable Cards should always be played from right-to-left in the order they entered, and can not be re-arranged.
+
+Some Executable Card's effects will trigger more, subsequent Executable and ~ATH Code Enter cards. **These subsequent triggering event's Executable and ~ATH Code Enter Cards are resolved only after all previously triggered cards are resolved**.
+
+If multiple cards are discarded at the same time, that trigger different ~ATH Codes, the card further down in the Discard Pile is considered the first triggering event. *Players can always choose the order they put cards destroyed at the same time into their own Discard Pile*. (They cannot re-arrange them later.)
+
+If a card is nullified, it's considered at the very bottom of it's player's Discard Pile for the purpose of timing only. The Active Player's Discard Pile is the top- most Discard Pile for this purpose, too.
+
+<!-- @TODO: Better look for the gallery & write alt text for these -->
+![todo](../images/rules/RuleImage_Execuables_Fig1.png "Figure 1")
+![todo](../images/rules/RuleImage_Execuables_Fig2.png "Figure 2")
+![todo](../images/rules/RuleImage_Execuables_Fig3.png "Figure 3")
+![todo](../images/rules/RuleImage_Execuables_Fig4.png "Figure 4")
+![todo](../images/rules/RuleImage_Execuables_Fig5.png "Figure 5")
+
+It is advised you go slowly and remain in communication with other player's to avoid extra confusion about timing.
+
+### Score Phase
+Remember: The Score Phase is skipped until the first turn of the second round!
+
+**During the Score Phase, every player checks the power of their own cards at each Planet**. At their own Planet, they will include the power of their Planet Card (if it is intact) and their Defenders. At every other planet, they will only include the power of their own characters. (They do not combine their character's power with another player's character's power, even if they are both invaders.)
+
+**Any player who has an invading force that is has greater total power than the defending power gains 1 Victory Point**, and the defending planet card (if it is intact) will take one damage.
+
+**The power is totaled at every planet during every player's score phase**- not just the Active Player's.
+
+If there are *multiple* players who have greater invading power at a planet, they *all score a Victory Point* and the defending planet card takes *multiple* points of damage.
+
+If a Planet Card has reached it's **maximum amount of damage, it's flipped to the destroyed side and is considered destroyed**. (*However, Planet Cards do not move into the Discard Pile*.) Even when a Planet Card is destroyed, the location is still considered a “Planet”- but the player doesn't benefit from the effects on the intact Planet Card.
+
+Planet Cards that are destroyed can trigger Executable Cards in the Score Phase, which are resolved after all power totals have been calculated and victory point earnings and destruction resolved.
+
+**If a player ever earns Victory Points while their Planet Card is destroyed, they will flip their Planet Card back to the intact side, with no damage**. “Restoring” their planet card, as this is known, is an effect is triggered like an Executable.
+
+As soon as any player reaches 7 Victory Points, the final round (known as “End Game” begins.) The Active Player will finish their turn in the Boon Phase, and then every other player will get a turn to be the Active Player. Now, the game is complete, and the player with the highest amount of Victory Points is the winner.
+
+<div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
+    <h3>Advanced</h3>
+    <p>If the result is a tie in Victory Points at the end of the End Game Round, another round is played. This extra round is still considered “End Game.”</p>
+</div>
+
+### Boon Phase
+During the Boon Phase, the Active Player will put **a Boon on all their own untapped character cards at their planet**.
+
+<div class="flex mb-8 justify-center">
+<div>
+
+![Salmon-coloured one-boon dollar bill](../images/rules/Boon_Token_New_1.png)
+</div>
+<div>
+
+![Maroon-coloured three-boon dollar bill](../images/rules/Boon_Token_New_3.png)
+</div>
+</div>
+
+A card can only hold a maximum of three Boons. Once a card has three Boons, they do not gain anymore boons until they have less than three again.
+
+**Boons do not have an effect naturally**, but many cards reference Boons for game-text. Even a Card doesn't have a current use for Boons, the Active Player should put boons on their untapped cards at their own planet during the Boon Phase.
+
+Only the Active Player gains Boons during their own Boon Phase.
+
+## Deck Building
+Every Homestuck ATCG deck must meet the following criteria:
+
+<ul class="list-none homestuck-list">
+    <li>Total of 49 Cards</li>
+    <li>Exactly 1 Planet Card</li>
+    <li>No more than 2 copies of any card with the exact same Name</li>
+    <li>The total amount of Star Value for the deck does not exceed 150</li>
+    <li>A maximum of 1 card with the #BIRTHDAY keyword</li>
+</ul>
+
+A Card's Name is both the all-caps *TITLE* and all-lowercase *subtitle*. There is no limit on how many cards can share a TITLE, as long as there is no more than 2 cards with the exact same name.
+
+The Star Value of a card is noted on the bottom right of the card, as a picture of 1-5 stars. In the game itself, Star Value is irrelevant- **Star Value is only a metric for Deck-Building**. When you add the total amount of stars for a deck together- *including the Planet Card and any repeated cards* - the value can not exceed 150.
+
+## Quick Reference
+Start-Up:
+- Draw 5 Cards
+- Mulligan: +1g to Every Other Player
+
+Prep Phase:
+- Gain Grist Based on Highest VP 
+  - Grist Table (todo, put it in)
+  - Max 12 Grist
+- Refresh Tapped Cards 
+- Draw Cards
+  - Skipped for 1st Player's 1st Turn
+- Mill: +2 VP to Every Other Player
+
+Main Phase:
+- Enter a Card
+- Move a Card (2g)
+
+Score Phase:
+- Higher Power than Defenders: +1 VP
+- 7 VP triggers End Game
+
+Boon Phase:
+- Max 3 Boons per Card
