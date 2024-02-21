@@ -1,0 +1,38 @@
+---
+import CardRepository from "../libs/CardRepository";
+import ArtRepository from "../libs/ArtRepository";
+import SetTypeGallery from "./SetTypeGallery.astro";
+
+interface Props {
+    setName: string;
+}
+
+const { setName } = Astro.props;
+const charCards = CardRepository.bySet(CardRepository.allCharacter(), setName);
+const inventoryCards = CardRepository.bySet(CardRepository.allInventory(), setName);
+const executableCards = CardRepository.bySet(CardRepository.allExecutable(), setName);
+const planetCards = CardRepository.bySet(CardRepository.allPlanets(), setName);
+
+const artCollection = ArtRepository.loadAll(await Astro.glob('../cards/images/*.png'));
+---
+<div class="hidden mt-12">
+    <div class="mb-8">
+        <h2 class="text-2xl border-b-2 border-lavender border-dashed mb-4">Character Cards</h2>
+        <SetTypeGallery cards={ charCards } artCollection={ artCollection } />
+    </div>
+
+    <div class="mb-8">
+        <h2 class="text-2xl border-b-2 border-lavender border-dashed mb-4">Inventory Cards</h2>
+        <SetTypeGallery cards={ inventoryCards } artCollection={ artCollection } />
+    </div>
+
+    <div class="mb-8">
+        <h2 class="text-2xl border-b-2 border-lavender border-dashed mb-4">Executable Cards</h2>
+        <SetTypeGallery cards={ executableCards } artCollection={ artCollection } />
+    </div>
+
+    <div class="mb-8">
+        <h2 class="text-2xl border-b-2 border-lavender border-dashed mb-4">Planet Cards</h2>
+        <SetTypeGallery cards={ planetCards } artCollection={ artCollection } />
+    </div>
+</div>

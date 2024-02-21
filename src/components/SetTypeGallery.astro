@@ -1,0 +1,45 @@
+---
+import { Card } from "../libs/CardRepository";
+import { Image } from 'astro:assets';
+import CardArtResolver, {ArtCollection, ResolvedArt} from "../libs/CardArtResolver";
+
+interface Props {
+    cards: Card[];
+    artCollection: {
+        [propName: string]: object;
+    };
+}
+
+interface CardWithArt {
+    card: Card,
+    art: ResolvedArt,
+
+    /** Some cards have 2+ images, so this is used to make a unique ID for the DOM */
+    artIndex: number,
+}
+
+const { cards, artCollection } = Astro.props;
+
+const cardsByArt = (await Promise.all(cards.map(async (card) => {
+    const cardArt = await CardArtResolver(card, artCollection);
+    return cardArt.map((art, index) => ({card, art, artIndex: index }));
+}))).flat();
+---
+<div class="grid grid-cols-3 gap-4">
+    { cardsByArt.map((cardWithArt) => {
+        const { card, art, artIndex } = cardWithArt;
+        const cardId = `card-${card["Card Number"]}-${artIndex}`;
+
+        return <div>
+            <a
+                href={ `#${cardId}` }
+                data-lightbox-image-src={ art.public.src }
+                data-lightbox-caption={ `${card.TITLE} - ${card.subtitle}` }
+                x-data="{}"
+                x-on:click.stop="$dispatch('img-modal', { imgModalSrc: $el.dataset.lightboxImageSrc, imgModalAlt: $el.dataset.lightboxCaption })"
+            >
+                <img src={ art.public.src } alt={ `${card.TITLE} - ${card.subtitle}` }>
+            </a>
+        </div>
+    }) }
+</div>

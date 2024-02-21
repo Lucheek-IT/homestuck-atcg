@@ -39,6 +39,7 @@ declare type _default = {
     allInventory(): InventoryCard[],
     allExecutable(): ExecutableCard[],
     allPlanets(): PlanetCard[],
+    bySet<Card>(cards: Card[], setName: string): Card[],
 };
 
 export { CharacterCard, InventoryCard, ExecutableCard, PlanetCard, Card };

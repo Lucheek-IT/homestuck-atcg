@@ -24,11 +24,16 @@ export default {
         return csvLoader('./src/cards/inventory.csv');
     },
 
+
     allExecutable() {
         return csvLoader('./src/cards/executables.csv');
     },
 
     allPlanets() {
         return csvLoader('./src/cards/planets.csv');
+    },
+
+    bySet(cards, set) {
+        return cards.filter((card) => card['Set Release'] === set);
     },
 }
