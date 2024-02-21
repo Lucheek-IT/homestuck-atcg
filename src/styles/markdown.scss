@@ -82,6 +82,10 @@
     }
   }
 
+  ul.subitem {
+    @apply mb-0;
+  }
+
   ol {
     @apply pl-0 list-decimal ml-10 text-lg mb-8;
 
@@ -163,3 +167,8 @@ ul.homestuck-list {
     content: "==>";
   }
 }
+
+li.figure::marker {
+  content: "";
+}
+

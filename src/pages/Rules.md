@@ -365,26 +365,73 @@ A Card's Name is both the all-caps *TITLE* and all-lowercase *subtitle*. There i
 The Star Value of a card is noted on the bottom right of the card, as a picture of 1-5 stars. In the game itself, Star Value is irrelevant- **Star Value is only a metric for Deck-Building**. When you add the total amount of stars for a deck together- *including the Planet Card and any repeated cards* - the value can not exceed 150.
 
 ## Quick Reference
-Start-Up:
-- Draw 5 Cards
-- Mulligan: +1g to Every Other Player
 
-Prep Phase:
-- Gain Grist Based on Highest VP 
-  - Grist Table (todo, put it in)
-  - Max 12 Grist
-- Refresh Tapped Cards 
-- Draw Cards
-  - Skipped for 1st Player's 1st Turn
-- Mill: +2 VP to Every Other Player
+<div class="flex flex-wrap mb-8 justify-between">
+  <div class="p-4 mb-8 text-sm lg:w-[45%]">
+    <h3>Start-Up</h3>
+    <ul>
+      <li>Draw 5 Cards</li>
+      <li>Mulligan: +1g to Every Other Player</li>
+    </ul>
+  </div>
 
-Main Phase:
-- Enter a Card
-- Move a Card (2g)
+  <div class="py-2 px-4 mb-8 text-sm lg:w-[45%]">
+    <h3>Prep Phase</h3>
+    <ul>
+      <li>Gain Grist Based on Highest VP
+        <ul class="subitem"><li><small>Max 12 Grist</small></li></ul>
+      </li>
+      <li class="figure">
+        <div class="grid grid-cols-3 gap-1 text-center">
+          <div>0 VP</div>
+          <div>==></div>
+          <div>3g</div>
+          <!-- -->
+          <div>1-2 VP</div>
+          <div>==></div>
+          <div>5g</div>
+          <!-- -->
+          <div>3-5 VP</div>
+          <div>==></div>
+          <div>6g</div>
+          <!-- -->
+          <div>6+ VP</div>
+          <div>==></div>
+          <div>9g</div>
+        </div>
+      </li>
+      <li>Refresh Tapped Cards</li>
+      <li>Draw Cards
+        <ul class="subitem"><li><small>Skipped for 1<sup>st</sup> Player's 1<sup>st</sup> Turn</small></li></ul>
+      </li>
+      <li>Mill: +2 VP to Every Other Player</li>
+    </ul>
+  </div>
 
-Score Phase:
-- Higher Power than Defenders: +1 VP
-- 7 VP triggers End Game
+  <div class="p-4 mb-8 text-sm lg:w-[45%]">
+    <h3>Main Phase</h3>
+    <ul>
+      <li>Enter a Card</li>
+      <li>Move a Card (2g)</li>
+      <li>Attack (1g)</li>
+      <li>Use an Ability</li>
+    </ul>
+  </div>
 
-Boon Phase:
-- Max 3 Boons per Card
+  <div class="p-4 mb-8 text-sm lg:w-[45%]">
+    <h3>Score Phase</h3>
+    <ul>
+      <li>Higher Power than Defenders: +1 VP</li>
+      <li><em>7 VP triggers End Game</em></li>
+      <li>Attack (1g)</li>
+      <li>Use an Ability</li>
+    </ul>
+  </div>
+
+  <div class="p-4 mb-8 text-sm lg:w-[45%]">
+    <h3>Boon Phase</h3>
+    <ul>
+      <li>Max 3 Boons per Card</li>
+    </ul>
+  </div>
+</div>
