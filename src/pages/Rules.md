@@ -296,13 +296,29 @@ If multiple cards are discarded at the same time, that trigger different ~ATH Co
 
 If a card is nullified, it's considered at the very bottom of it's player's Discard Pile for the purpose of timing only. The Active Player's Discard Pile is the top- most Discard Pile for this purpose, too.
 
-<!-- @TODO: Better look for the gallery & write alt text for these -->
-![todo](../images/rules/RuleImage_Execuables_Fig1.png "Figure 1")
-![todo](../images/rules/RuleImage_Execuables_Fig2.png "Figure 2")
-![todo](../images/rules/RuleImage_Execuables_Fig3.png "Figure 3")
-![todo](../images/rules/RuleImage_Execuables_Fig4.png "Figure 4")
-![todo](../images/rules/RuleImage_Execuables_Fig5.png "Figure 5")
+<!-- @TODO: Better look for the gallery -->
+<div class="flex flex-wrap justify-around py-8">
+<div class="mb-8 lg:w-[45%]"><button x-data="{}" x-on:click.stop="const img = $el.querySelector('img'); $dispatch('img-modal', { imgModalSrc: img.src, imgModalAlt: img.alt })">
 
+![Three players are at the table. A card was just destroyed. The destruction of this card has triggered the ~ATH code of all the following cards: A card in the top player's hand, a card in the middle player's executables area, two cards in the bottom player's executables area, and one in the bottom player's hand. The bottom player is the active player.](../images/rules/RuleImage_Execuables_Fig1.png "Resolving Executables: Figure 1")
+</button></div>
+<div class="mb-8 lg:w-[45%]"><button x-data="{}" x-on:click.stop="const img = $el.querySelector('img'); $dispatch('img-modal', { imgModalSrc: img.src, imgModalAlt: img.alt })">
+
+![~ATH Enter cards are resolved first, but are optional. The active player's ~ATH Enter cards resolve first, and then continues clockwise. In this example, the Active Player (bottom) chooses to keep their triggered card in their hand. The next player (top) chooses to enter their card. The cards that still need to resolve are the middle player's card  in the executable area, and the bottom player's two cards in their executable area.](../images/rules/RuleImage_Execuables_Fig2.png "Resolving Executables: Figure 2")
+</button></div>
+<div class="mb-8 lg:w-[45%]"><button x-data="{}" x-on:click.stop="const img = $el.querySelector('img'); $dispatch('img-modal', { imgModalSrc: img.src, imgModalAlt: img.alt })">
+
+![Active Executable Cards are resolved after all ~ATH: Enter Cards. Active Executable Cards that are triggered always resolve -- they are not optional. The Active Player's right-most triggered Executable Card resolves first, then continues to the next player in clockwise order's right-most triggered Executable Card. After that, the Active Player's next right-most card resolves, and then continues to the clockwise player. From the cards that still need to be resolved in Figure 2, the order of resolution is bottom player's left-most card, middle player's card, and then bottom player's right-most card.](../images/rules/RuleImage_Execuables_Fig3.png "Resolving Executables: Figure 3")
+</button></div>
+<div class="mb-8 lg:w-[45%]"><button x-data="{}" x-on:click.stop="const img = $el.querySelector('img'); $dispatch('img-modal', { imgModalSrc: img.src, imgModalAlt: img.alt })">
+
+![The first Executable is resolved, and discarded. The second Executable is resolved, and discard. But, this Executable Card's effect causes a character in the top player's defending area to be discarded. This discarded character card triggers two previously-untriggered Executable Cards: one in the bottom player's executable area, and the other an ~ATH Enter card in the middle player's hand.](../images/rules/RuleImage_Execuables_Fig4.png "Resolving Executables: Figure 4")
+</button></div>
+<div class="mb-8 lg:mb-0 lg:w-[45%] mx-auto"><button x-data="{}" x-on:click.stop="const img = $el.querySelector('img'); $dispatch('img-modal', { imgModalSrc: img.src, imgModalAlt: img.alt })">
+
+![If the Executable Card's effects trigger more Executable Cards, the first group of triggers is resolved totally before the next round starts to be resolved. Continuing from Figure 4, the bottom player's right-most card must be resolved next, as it was part of the original set of executables triggered. Then, the new group of executables begins with the ~ATH Enter executable in the middle player's hand is resolved, and then the middle card in the bottom player's executable area is resolved, concluding the process.](../images/rules/RuleImage_Execuables_Fig5.png "Resolving Executables: Figure 5")
+</button></div>
+</div>
 It is advised you go slowly and remain in communication with other player's to avoid extra confusion about timing.
 
 ### Score Phase
