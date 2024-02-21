@@ -1,36 +1,16 @@
 ---
 import { Image } from 'astro:assets';
-import { getImage } from "astro:assets";
-import CardNotFound from "../images/card-not-found.svg";
 import { Card } from "../libs/CardRepository";
+import CardArtResolver, { ArtCollection } from "../libs/CardArtResolver";
 
 interface Props {
-    artCollection: {
-        [propName: string]: object;
-    };
+    artCollection: ArtCollection;
     card: Card;
 }
 
 const { card, artCollection } = Astro.props;
 
-// Most cards have 1, but planets have 2, so we're using an array to deal with em.
-const pictureField = card.Pictures ?? card.Picture ?? '';
-let cardArt = pictureField.split('//').map((pic) => artCollection[pic.trim()]);
-
-cardArt = await Promise.all(
-    cardArt.map(async (art) => {
-        if (! art) {
-            art = CardNotFound;
-        }
-
-        const publicImage = await getImage({src: art});
-
-        return {
-            asset: art,
-            public: publicImage,
-        };
-    })
-);
+const cardArt = await CardArtResolver(card, artCollection);
 ---
 <div class="flex flex-row" x-data="{}">
     { cardArt.map((image) => <a
