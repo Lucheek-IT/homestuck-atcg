@@ -1,5 +1,9 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro'
+import { Image } from "astro:assets";
+import TournamentPromoHero from "../images/promo/tournament-april-2024.jpg";
+
+const TournamentPromoAlt = "Promo banner for a tournament celebrating the release of Homestuck: Atypical Card Game and its first card set, The Opening Note. You can build your own deck and compete in a Swiss-style tournament to win cusotm art prizes. If you want to participate, you should submit your deck list by April 13th, 2024. Games will be played from April 14th through April 17th. The matches will be streamed in the discord server. The grand prize is for your fan troll to be illustrated by Lucheek and added to the game, and the top four players all receive sketch commissions.";
 ---
 <SiteLayout>
 	<h1 class="sr-only">Home</h1>
@@ -7,47 +11,71 @@ import SiteLayout from '../layouts/SiteLayout.astro'
 	<p class="mb-5">"Homestuck ATCG" is a competitive card-based game for 2-5 players-- similar to a collectible/trading card game, but with a deck-building mechanic that utilizes point-buy (instead of randomized booster packs.)</p>
 	<p class="mb-5">The game utilizes characters and themes from the Homestuck webcomic and franchise by Andrew Hussie.</p>
 
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-y-16 pt-4">
-		<div>
-			<h2 class="text-2xl border-b-2 border-lavender border-dashed mb-4">Current Build</h2>
-			<p>Full Release #1</p>
-			<p class="text-sm mb-8">March 1st, 2024</p>
-			<div class="text-2xl flex">
-				<span class="pr-2">==></span>
-				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3007938849" class="underline text-web-blue">
-					Tabletop Simulator Download
-				</a>
-			</div>
+	<div class="grid md:grid-cols-2 gap-8 md:gap-y-16 pt-4">
+		<div class="col-span-2 md:col-span-1">
+			<h2 class="text-3xl border-b-2 border-lavender border-dashed mb-4">Trailer</h2>
+			<video class="aspect-video w-full md:mt-12" poster="/trailer-thumb.png" controls preload="metadata">
+				<source src="/HomestuckATCG_SAHCon.mp4" type="video/mp4">
+				<p>Your browser does not support the video tag!</p>
+				<p class="mt-4"><a href="/HomestuckATCG_SAHCon.mp4" target="_blank" class="underline text-web-blue uppercase">==> Download Trailer</a></p>
+			</video>
+		</div>
 
-			<div class="text-2xl flex pt-8">
-				<span class="pr-2">==></span>
-				<a href="/HSATCG_Rules_Zine_02-19.pdf" class="underline text-web-blue">
-					Complete Rulebook Download
-				</a>
-			</div>
-
-			<div class="text-2xl flex pt-8">
-				<span class="pr-2">==></span>
-				<a href="/HSATCG_Deck_Builder.xlsx" class="underline text-web-blue">
-					Deck Builder Download
-				</a>
-			</div>
-
-			<div class="text-2xl flex pt-8">
-				<span class="pr-2">==></span>
-				<a href="https://drive.google.com/file/d/1P3hWdbT7GQFN041MwvlJuB1kwHwKo3Yg/view" class="underline text-web-blue">
-					HSATCG Print Download
-				</a>
+		<div class="col-span-2 md:col-span-1" x-data="{}">
+			<h2 class="text-3xl border-b-2 border-lavender border-dashed mb-4">Release Tournament</h2>
+			<Image
+				src={ TournamentPromoHero }
+				alt={ TournamentPromoAlt }
+				class="mb-8 cursor-pointer"
+				data-lightbox-image-src={ TournamentPromoHero.src }
+				data-lightbox-caption={ TournamentPromoAlt }
+				x-on:click.stop="$dispatch('img-modal', { imgModalSrc: $el.dataset.lightboxImageSrc, imgModalAlt: $el.dataset.lightboxCaption })"
+			/>
+			<div class="text-center">
+				<p class="text-sm">Join <a href="https://discord.gg/UYvRMQhPs3" class="underline text-web-blue">the discord</a> to participate, and <a href="https://hsatcg.tumblr.com/" class="underline text-web-blue">follow HSATCG on Tumblr</a> for more news!</p>
 			</div>
 		</div>
 
-		<div>
-			<h2 class="text-2xl border-b-2 border-lavender border-dashed mb-4">Trailer</h2>
-				<video class="aspect-video w-full" poster="/trailer-thumb.png" controls preload="metadata">
-					<source src="/HomestuckATCG_SAHCon.mp4" type="video/mp4">
-					<p>Your browser does not support the video tag!</p>
-					<p class="mt-4"><a href="/HomestuckATCG_SAHCon.mp4" target="_blank" class="underline text-web-blue uppercase">==> Download Trailer</a></p>
-				</video>
+		<div class="col-span-2">
+			<h2 class="text-3xl border-b-2 border-lavender border-dashed mb-4">Current Release: The Opening Note</h2>
+			<p class="text-sm mb-8 italic">Released on March 1st, 2024</p>
+
+			<div class="grid grid-cols-1 sm:grid-cols-2">
+				<div>
+					<h3 class="text-2xl mb-4">Digital Downloads</h3>
+
+					<div class="text-2xl flex">
+						<span class="pr-2">==></span>
+						<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3007938849" class="underline text-web-blue">
+							Tabletop Simulator Download
+						</a>
+					</div>
+
+					<div class="text-2xl flex pt-8">
+						<span class="pr-2">==></span>
+						<a href="/HSATCG_Deck_Builder.xlsx" class="underline text-web-blue">
+							Deck Builder Download
+						</a>
+					</div>
+				</div>
+				<div>
+					<h3 class="text-2xl mt-8 md:mt-0 mb-4">Print Downloads</h3>
+
+					<div class="text-2xl flex">
+						<span class="pr-2">==></span>
+						<a href="/HSATCG_Rules_Zine_02-19.pdf" class="underline text-web-blue">
+							Complete Rulebook Download
+						</a>
+					</div>
+
+					<div class="text-2xl flex pt-8">
+						<span class="pr-2">==></span>
+						<a href="https://drive.google.com/file/d/1P3hWdbT7GQFN041MwvlJuB1kwHwKo3Yg/view" class="underline text-web-blue">
+							HSATCG Print Download
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </SiteLayout>
