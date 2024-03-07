@@ -1,3 +1,19 @@
 [x-cloak] {
   display: none !important;
 }
+
+ul.homestuck-list {
+  @apply pl-0 list-disc ml-10 text-lg mb-8;
+
+  li {
+    @apply ml-4 pl-4 mb-0;
+  }
+
+  li::marker {
+    content: "==>";
+  }
+}
+
+strong {
+  @apply underline underline-offset-4 decoration-2 decoration-dotted italic bg-none;
+}

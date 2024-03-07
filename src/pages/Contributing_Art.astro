@@ -1,0 +1,23 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import TemplateFigure from "../components/TemplateFigure.astro"
+---
+<SiteLayout title="Contributing Art">
+    <h1 class="text-4xl mb-5">Contributing Art</h1>
+
+    <ul class="homestuck-list pt-4">
+        <li>Contributing Card / Playmat Art is a <em>pro-bono, volunteer-only position</em>. <strong>Artists will be credited on the card / playmat, and on the <a href="/Credits" class="underline text-web-blue">credits page</a></strong>, and can chose what name and link* (<em>*link is optional</em>) they'd like to be credited with.</li>
+        <li class="mt-4"><strong>Artists retain full rights to use their artwork</strong>, and are only voluntarily <em>donating</em> the artwork to be used for HSATCG's non-commercial game use. Artists may ask for their art to be removed from HSATCG at anytime.</li>
+        <li class="mt-4"><strong>Art does not have to be “new” or created originally/solely for HSATCG</strong>. (IE: You can submit art you made/posted before to be used, as long as it formats correctly into the work.)</li>
+        <li class="mt-4">
+            Card Art should be at least 300dpi, and sized to 2 inches by 1.75 inches (rectangle) …  or use the following, more in-depth template. (If you want to “break the boundaries,” please submit artwork with transparency and be careful not to cover game text!)
+            <TemplateFigure src="/CardArtTemplate.png" altText="Card art template, with cut-outs to give artists the correct shape"/>
+        </li>
+        <li class="mt-4">
+            Playmat Art should be at least 300dpi and sized to 21 inches by 11 inches, or use the following overlay / template.
+            <TemplateFigure src="/PlaymatTemplate.png" altText="Card art template, with cut-outs to give artists the correct shape"/>
+        </li>
+        <li class="mt-4">Please put in the <a href="https://discord.gg/UYvRMQhPs3" class="underline text-web-blue">HSATCG Discord server</a> which card(s) you are making art for, or have made art for, to help others keep track!</li>
+        <li class="mt-4">Any use of AI Image Generation or otherwise unoriginal or uncredited use of other artists is not permitted in card art. The artwork must be wholly created by the donating, credited artist(s)</li>
+    </ul>
+</SiteLayout>

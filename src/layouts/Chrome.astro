@@ -52,15 +52,18 @@ const headTitle = (title ? `${title} | ` : '') + siteName;
                     <NavDropdownLink href="/Rules_BossMode">Boss Mode</NavDropdownLink>
                 </NavDropdown>
                 <NavDropdown label="Cards">
+                    <div class="text-sm text-gray-500">Database</div>
                     <NavDropdownLink href="/Cards/Character">Character Cards</NavDropdownLink>
                     <NavDropdownLink href="/Cards/Inventory">Inventory Cards</NavDropdownLink>
                     <NavDropdownLink href="/Cards/Executable">Executable Cards</NavDropdownLink>
                     <NavDropdownLink href="/Cards/Planet">Planet Cards</NavDropdownLink>
-                </NavDropdown>
-                <NavDropdown label="Sets">
+                    <div class="text-sm text-gray-500 pt-2">Sets</div>
                     <NavDropdownLink href="/Set1">001- The Opening Note</NavDropdownLink>
                 </NavDropdown>
-                <NavLink href="/Credits">Credits</NavLink>
+                <NavDropdown label="Contribute">
+                    <NavDropdownLink href="/Contributing_Art">Contributing Art</NavDropdownLink>
+                    <NavDropdownLink href="/Credits">Credits</NavDropdownLink>
+                </NavDropdown>
                 <NavLink href="https://discord.gg/UYvRMQhPs3">
                     <img src={DiscordLogo.src} aria-hidden="true" class="inline-block mr-1" style="width: 1.2rem;">
                     Discord
