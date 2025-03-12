@@ -10,8 +10,6 @@ Rule Book Build: February 2024
 
 The game is designed to be played on the virtual platform, Tabletop Simulator, made by Berserk Games, and available through the Steam application.
 
-(Homestuck: ATCG also has an alternative format that is co-operative, and can be played with 1-5 players. This format is called [Boss Mode](/Rules_BossMode).)
-
 ## Before You Play
 Before the game begins, all players must assemble their own deck in a process called “deck-building.” Every deck contains a total of 49 cards, with exactly one Planet Card included- but not every player's deck will be the same. *Deck-Building specifics will be covered later*.
 
