@@ -12,6 +12,7 @@ const charCards = CardRepository.bySet(CardRepository.allCharacter(), setName);
 const inventoryCards = CardRepository.bySet(CardRepository.allInventory(), setName);
 const executableCards = CardRepository.bySet(CardRepository.allExecutable(), setName);
 const planetCards = CardRepository.bySet(CardRepository.allPlanets(), setName);
+const moonCards = CardRepository.bySet(CardRepository.allMoons(), setName);
 
 const artCollection = ArtRepository.loadAll(await Astro.glob('../cards/images/*.png'));
 ---
@@ -35,4 +36,10 @@ const artCollection = ArtRepository.loadAll(await Astro.glob('../cards/images/*.
         <h2 class="text-2xl border-b-2 border-lavender border-dashed mb-4">Planet Cards</h2>
         <SetTypeGallery cards={ planetCards } artCollection={ artCollection } />
     </div>
+
+    <div class:list={['mb-8', { 'hidden': (moonCards.length === 0) }]}>
+        <h2 class="text-2xl border-b-2 border-lavender border-dashed mb-4">Moon Cards</h2>
+        <SetTypeGallery cards={ moonCards } artCollection={ artCollection } />
+    </div>
+
 </div>
