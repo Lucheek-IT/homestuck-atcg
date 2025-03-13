@@ -47,18 +47,15 @@ const headTitle = (title ? `${title} | ` : '') + siteName;
             </div>
             <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
                 <NavLink href="/">Home</NavLink>
-                <NavDropdown label="Rules">
-                    <NavDropdownLink href="/Rules">Rule Book</NavDropdownLink>
-                    <NavDropdownLink href="/Rules_BossMode">Boss Mode</NavDropdownLink>
-                </NavDropdown>
+                <NavLink href="/Rules">Rules</NavLink>
                 <NavDropdown label="Cards">
-                    <div class="text-sm text-gray-500">Database</div>
                     <NavDropdownLink href="/Cards/Character">Character Cards</NavDropdownLink>
                     <NavDropdownLink href="/Cards/Inventory">Inventory Cards</NavDropdownLink>
                     <NavDropdownLink href="/Cards/Executable">Executable Cards</NavDropdownLink>
                     <NavDropdownLink href="/Cards/Planet">Planet Cards</NavDropdownLink>
-                    <div class="text-sm text-gray-500 pt-2">Sets</div>
-                    <NavDropdownLink href="/Set1">001- The Opening Note</NavDropdownLink>
+                    <NavDropdownLink href="/Cards/Moon">Moon Cards</NavDropdownLink>
+                    <div class="text-sm text-gray-500 pt-2"><hr></div>
+                    <NavDropdownLink href="/Precons">Precon Decks</NavDropdownLink>
                 </NavDropdown>
                 <NavDropdown label="Contribute">
                     <NavDropdownLink href="/Contributing_Art">Contributing Art</NavDropdownLink>

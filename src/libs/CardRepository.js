@@ -24,13 +24,16 @@ export default {
         return csvLoader('./src/cards/inventory.csv');
     },
 
-
     allExecutable() {
         return csvLoader('./src/cards/executables.csv');
     },
 
     allPlanets() {
         return csvLoader('./src/cards/planets.csv');
+    },
+
+    allMoons() {
+        return csvLoader('./src/cards/moons.csv');
     },
 
     bySet(cards, set) {

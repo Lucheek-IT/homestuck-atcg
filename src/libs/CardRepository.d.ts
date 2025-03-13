@@ -34,13 +34,18 @@ interface PlanetCard extends Card {
     Pictures: string;
 }
 
+interface MoonCard extends Card {
+    'Enter Cost': string;
+}
+
 declare type _default = {
     allCharacter(): CharacterCard[],
     allInventory(): InventoryCard[],
     allExecutable(): ExecutableCard[],
     allPlanets(): PlanetCard[],
+    allMoons(): MoonCard[],
     bySet<Card>(cards: Card[], setName: string): Card[],
 };
 
-export { CharacterCard, InventoryCard, ExecutableCard, PlanetCard, Card };
+export { CharacterCard, InventoryCard, ExecutableCard, PlanetCard, MoonCard, Card };
 export default _default;
