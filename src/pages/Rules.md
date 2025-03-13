@@ -126,14 +126,14 @@ Grist is recorded by hexagon tokens kept near the player's deck. The green side 
 </div>
 
 #### Refresh Cards
-After a player gains Grist, they will refresh any and all cards they control at any location that are tapped. When a card is refreshed, it's turned upright and vertical. You must refresh every card that you control if it's tapped- you can't choose to keep it tapped.
+After a player gains Grist, they will refresh any and all cards they control at any location that are tapped. When a card is refreshed, it's turned upright and vertical. You *must* refresh every card that you control if it's tapped- you can't choose to keep it tapped.
 
 (Tapping happens during the Main Phase, so there will not be any cards to refresh on your very first turn.)
 
 #### Draw Cards
 Now, you'll draw at least 1 card from your deck into your hand.
 
-If you are the very first player in the game, on your very first turn, you won't draw at all. Every other turn after will always require a player draw at least one card.
+*If you are the very first player in the game, on your very first turn, you won't draw at all.* Every other turn after will always require a player draw at least one card.
 
 <div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
     <h3>Tabletop Simulator Controls</h3>
@@ -162,7 +162,7 @@ The actions an active player can choose during their Main Phase are:
 - *Play* a Card from their Hand
 - *Move* a Character Card
 - *Attack* with a Character Card
-- *Activate the Ability* of a Character Card
+- Activate the *Ability* of a Character Card
 - *End* you Main Phase early
 
 As long as you have grist, you may continue to take actions during your Main Phase. *If you ever have 0 Grist, and all actions have fully resolved, your Main Phase ends automatically.*
@@ -178,13 +178,13 @@ To play a card, you must first pay it's Enter Cost in full. This is found on mid
 
 **Inventory cards can only enter play as “attached” to the specific card type listed on that Inventory Card**. They can not be in-play without something to attach to. However, you can choose to attach them to any in-play card that fits the requirements, at any location.
 
-**Executable cards enter play only in your Executable Zone**. When you play an Executable Card, make sure you arrange them in your Executable Zone in the order you play them, right-to-left. (*This is very important for when Executable Cards are triggered, as they resolve right-to-left.*) You can not re-arrange or move Executable Cards once they are played.
+**Executable cards enter play only in your Executable Zone**. When you play an Executable Card, make sure you arrange them in your Executable Zone in the order you play them, right-to-left. (*This is very important for when Executable Cards are triggered, as they resolve left-to-right.*) You can not re-arrange or move Executable Cards once they are played.
 
 ![Diagram of two players' playmats, hands, and tokens](../images/rules/RuleImage_Locations_2.png)
 
 There are some cards that have an Enter cost listed as “~ATH: (X)” ~ATH (*read as Tilde-ath, or “'til Death”*) is Executable coding.
 
-As an Enter cost, this means that card can not be played until the (X) card has been discarded or destroyed. When the triggering card is discarded or destroyed, you may choose to *immediately* play that card. You do not have to enter a card with an Executable Enter Cost when it is triggered- you can choose to keep it in your hand. However, you can *only* play these cards immediately after the triggering card is discarded or destroyed. (If you choose not to enter the card then, you must wait until it's triggered again.)
+As an Enter cost, this means that card can not be played until the (X) card has been discarded or destroyed. When the triggering card is discarded or destroyed, you may choose to *immediately* play that card. You do not *have* to enter a card with an Executable Enter Cost when it is triggered- you can choose to keep it in your hand. However, you can *only* play these cards immediately after the triggering card is discarded or destroyed. (If you choose not to enter the card then, you must wait until it's triggered again.)
 
 You can play Executable coded Enter Cost cards during any player's turn- as long as it's immediately after a triggering card was discarded or destroyed. You can also play these cards to any appropriate location, just like cards with an enter cost of grist.
 
@@ -206,11 +206,11 @@ During your main phase, you attack and destroy your opponent's invader #TROLL. Y
 #### Move a Character Card
 Once your character card has entered, they can change their location to a new planet by being moved. **Moving a character card always costs 2 grist**- no matter what their enter cost is. The 2 grist must be paid *before* a character moves.
 
-Once a character card has moved, it will become tapped and *loose all boons* it might've had.
+Moving does not tap a character card, but tapped character cards can’t be chosen to be moved!
 
 <div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
     <h3>Advanced</h3>
-    <p>A character will <em>always</em> be tapped and loose all boons when it moves- even if the movement is caused by effect from an ability or other card during any player's turn.</p>
+    <p>A character will <span class="underline">always</span> loose all boons when it moves- even if the movement is caused by effect from an ability or other card during any player's turn.</p>
 </div>
 
 Any Inventory card that is attached to the character moves with the character it's attached to. *Inventory can not be moved on it's own*.
@@ -317,18 +317,18 @@ If a card is nullified, it's considered at the very bottom of it's player's Disc
 ![If the Executable Card's effects trigger more Executable Cards, the first group of triggers is resolved totally before the next round starts to be resolved. Continuing from Figure 4, the bottom player's right-most card must be resolved next, as it was part of the original set of executables triggered. Then, the new group of executables begins with the ~ATH Enter executable in the middle player's hand is resolved, and then the middle card in the bottom player's executable area is resolved, concluding the process.](../images/rules/RuleImage_Execuables_Fig5.png "Resolving Executables: Figure 5")
 </button></div>
 </div>
-It is advised you go slowly and remain in communication with other player's to avoid extra confusion about timing.
+It is advised you go slowly and remain in communication with other player's to avoid *extra* confusion about timing.
 
 ### Score Phase
 Remember: The Score Phase is skipped until the first turn of the second round!
 
 **During the Score Phase, every player checks the power of their own cards at each Planet**. At their own Planet, they will include the power of their Planet Card (if it is intact) and their Defenders. At every other planet, they will only include the power of their own characters. (They do not combine their character's power with another player's character's power, even if they are both invaders.)
 
-**Any player who has an invading force that is has greater total power than the defending power gains 1 Victory Point**, and the defending planet card (if it is intact) will take one damage.
+**Any player who has an invading force that is has greater total power than the defending power gains 1 Victory Point**, and the defending planet card (if it is intact) will take damage equal to the difference between Invading and Defending power.
 
 **The power is totaled at every planet during every player's score phase**- not just the Active Player's.
 
-If there are *multiple* players who have greater invading power at a planet, they *all score a Victory Point* and the defending planet card takes *multiple* points of damage.
+If there are *multiple* players who have greater invading power at a planet, they *all score a Victory Point*.
 
 If a Planet Card has reached it's **maximum amount of damage, it's flipped to the destroyed side and is considered destroyed**. (*However, Planet Cards do not move into the Discard Pile*.) Even when a Planet Card is destroyed, the location is still considered a “Planet”- but the player doesn't benefit from the effects on the intact Planet Card.
 
@@ -371,12 +371,48 @@ Every Homestuck ATCG deck must meet the following criteria:
     <li>Exactly 1 Planet Card</li>
     <li>No more than 2 copies of any card with the exact same Name</li>
     <li>The total amount of Star Value for the deck does not exceed 150</li>
-    <li>A maximum of 1 card with the #BIRTHDAY keyword</li>
 </ul>
 
-A Card's Name is both the all-caps *TITLE* and all-lowercase *subtitle*. There is no limit on how many cards can share a TITLE, as long as there is no more than 2 cards with the exact same name.
+A Card's *Name* is both the all-caps *TITLE* and all-lowercase *subtitle*. There is no limit on how many cards can share a TITLE, as long as there is no more than 2 cards with the exact same name.
 
 The Star Value of a card is noted on the bottom right of the card, as a picture of 1-5 stars. In the game itself, Star Value is irrelevant- **Star Value is only a metric for Deck-Building**. When you add the total amount of stars for a deck together- *including the Planet Card and any repeated cards* - the value can not exceed 150.
+
+### Moon Cards
+The second set, Paradox Space Road Trip, introduced a new type of card- *Moons*.
+
+<div class="flex mb-8 justify-center gap-8">
+<div class="lg:w-[25%]">
+
+!["LAND OF LIGHT AND RAIN // burn so bright", a moon card with an enter cost of 2g. When Characters attack here, they gain +1 Power per Boon while attacking. Four stars.](../images/rules/Sample_Moon_M009.png)
+</div>
+<div class="lg:w-[25%]">
+
+!["GREEN MOON OF ALTERNIA // felt mob manor", a moon card with an enter cost of 2g. During all score phases, every player gain +1 Grist for every #FELT character card they control here. Four stars.](../images/rules/Sample_Moon_M001.png)
+</div>
+</div>
+
+**Moon Cards create sub-locations**, that can be played into any planet’s orbit. Characters can  then move to, or enter at, a Moon to benefit from their effects.
+
+While characters at a moon in a planet’s orbit **still contribute to overall invading or defending power during the Score Phase**, they are only considered in the same location (“*here*”) as other characters at the same moon. **This means breaking up attacks, abilities, or other effects.**
+
+Invading / Defending is decided by the Planet, not the Moon. (*I.E: If you play a Moon Card to another player’s Planet’s orbit, your characters are still considered “invaders” there.*)
+
+Defending Characters at a Moon in their own Planet’s Orbit who are untapped during their player’s Boon Phase still earn a Boon.
+
+When you move a character from the base planet to a Moon or vice- versa, even in the same orbit, this is considered moving- and would cause a character to loose it’s boons like normal. 
+
+Moons *can* be played to destroyed planet’s orbit.
+
+### Asterisks
+Asterisks are a type of Game Text that reference rules outside of the printed text. They are written on a card as a keyword prefaced by an “*”.
+
+#### *Birthday
+A player can only have 1 *Birthday card in their deck.
+
+#### *Immortality
+When a character with *Immortality would be destroyed, the character’s owner can choose to *instead* add an “Immortality Mark” to the card, and roll a six-sided dice (“d6”.) If the roll is *greater* than the amount of Immortality Marks on the card, the card is *not destroyed*.
+
+The amount of Immortality Marks on a card can also be a deciding factor for other abilities and mechanics.
 
 ## Quick Reference
 
@@ -425,10 +461,10 @@ The Star Value of a card is noted on the bottom right of the card, as a picture 
   <div class="p-4 mb-8 text-sm lg:w-[45%]">
     <h3>Main Phase</h3>
     <ul>
-      <li>Enter a Card</li>
-      <li>Move a Card (2g)</li>
-      <li>Attack (1g)</li>
-      <li>Use an Ability</li>
+      <li>Enter a Card (Cost)</li>
+      <li>Move an Un-Tapped Card (2g)</li>
+      <li>Attack (1g + Tap)</li>
+      <li>Use an Ability (Cost + Tap)</li>
     </ul>
   </div>
 
@@ -437,8 +473,6 @@ The Star Value of a card is noted on the bottom right of the card, as a picture 
     <ul>
       <li>Higher Power than Defenders: +1 VP</li>
       <li><em>7 VP triggers End Game</em></li>
-      <li>Attack (1g)</li>
-      <li>Use an Ability</li>
     </ul>
   </div>
 
