@@ -286,7 +286,7 @@ Executable Cards resolve after all ~ATH Enter Cards triggered by the same event.
 
 The right most triggered Executable Card of the Active Player resolves first, and then continues with the next clockwise player's right-most triggered Executable Card. Each player only activates one Executable Card (at most) before continuing to the next clockwise player's right-most triggered card.
 
-Because of these timing rules, Executable Cards should always be played from right-to-left in the order they entered, and can not be re-arranged.
+Because of these timing rules, Executable Cards should always be played from left-to-right in the order they entered, and can not be re-arranged.
 
 Some Executable Card's effects will trigger more, subsequent Executable and ~ATH Code Enter cards. **These subsequent triggering event's Executable and ~ATH Code Enter Cards are resolved only after all previously triggered cards are resolved**.
 
