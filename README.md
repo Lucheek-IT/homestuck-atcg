@@ -32,7 +32,7 @@ TITLE,subtitle,Enter Cost,Game Text,Flavorlogue,Stars,Art Credit,Picture,Set Rel
 
 `planets.csv`:
 ```csv
-TITLE,subtitle,Power,Max Damage,Draw Boost,Game Text,Flavorlogue,Stars,Art Credit,Pictures,Set Release,Card Number
+TITLE,subtitle,Power,Max Damage,Draw Boost,Game Text,Flavorlogue,Stars,Art Credit,Picture,Picture (Destroyed),Set Release,Card Number
 ```
 </details>
 
