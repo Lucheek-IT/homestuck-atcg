@@ -2,9 +2,9 @@
 layout: ../layouts/MarkdownLayout.astro
 title: Rules
 ---
-Rule Book Build: February 2024
+Rule Book Build: December 2025
 
-**Homestuck: ATCG** is a competitive card-based game for 2- 4 players, similar to a trading card game, but with a deck-building mechanic that utilizes point-buy instead of randomized booster packs.
+**Homestuck: ATCG** is a competitive card-based game for 2-5 players, similar to a trading card game, but with a deck-building mechanic that utilizes point-buy instead of randomized booster packs.
 
 *Note: Play-Testing as of now has only been made for 2 player games.*
 
@@ -126,7 +126,7 @@ Grist is recorded by hexagon tokens kept near the player's deck. The green side 
 </div>
 
 #### Refresh Cards
-After a player gains Grist, they will refresh any and all cards they control at any location that are tapped. When a card is refreshed, it's turned upright and vertical. You *must* refresh every card that you control if it's tapped- you can't choose to keep it tapped.
+After a player gains Grist, they will *refresh* any and all cards they control at any location that are tapped. When a card is refreshed, it's turned upright and vertical. You *must* refresh every card that you control if it's tapped- you can't choose to keep it tapped.
 
 (Tapping happens during the Main Phase, so there will not be any cards to refresh on your very first turn.)
 
@@ -174,11 +174,11 @@ Playing a card (also known as “entering” the card) means moving a card from 
 
 To play a card, you must first pay it's Enter Cost in full. This is found on middle right-hand side of the card, in a box labeled “Enter.” Most cards have an enter cost of grist.
 
-**You can choose to enter a Character Card to any planet**. Your own character at your own planet is a *defender*, while your character at any opponent's planet is an *invader*. A character does not need to start at your own planet, but can be directly played as an invader.
+**You can choose to enter a Character Card to any location**. Your own character at your own planet is a *defender*, while your character at any opponent's planet is an *invader*. A character does not need to start at your own planet, but can be directly played as an invader.
 
 **Inventory cards can only enter play as “attached” to the specific card type listed on that Inventory Card**. They can not be in-play without something to attach to. However, you can choose to attach them to any in-play card that fits the requirements, at any location.
 
-**Executable cards enter play only in your Executable Zone**. When you play an Executable Card, make sure you arrange them in your Executable Zone in the order you play them, right-to-left. (*This is very important for when Executable Cards are triggered, as they resolve left-to-right.*) You can not re-arrange or move Executable Cards once they are played.
+**Executable cards enter play only in your Executable Zone**. When you play an Executable Card, make sure you arrange them in your Executable Zone in the order you play them, left-to-right. (*This is very important for when Executable Cards are triggered, as they resolve left-to-right.*) You can not re-arrange or move Executable Cards once they are played.
 
 ![Diagram of two players' playmats, hands, and tokens](../images/rules/RuleImage_Locations_2.png)
 
@@ -204,7 +204,7 @@ During your opponent's main phase, they attack and destroy your defending #TROLL
 During your main phase, you attack and destroy your opponent's invader #TROLL. You can now choose to put “GAMZEE MAKARA / the mirthful messiahs” into play, because the code says “any” #TROLL- not specifically your own #TROLL. You can immediately choose to have the card attack, because it is your own Main Phase.
 
 #### Move a Character Card
-Once your character card has entered, they can change their location to a new planet by being moved. **Moving a character card always costs 2 grist**- no matter what their enter cost is. The 2 grist must be paid *before* a character moves.
+Once your character card has entered, they can change their location to a new planet or moon by being moved. **Moving a character card always costs 2 grist**- no matter what their enter cost is. The 2 grist must be paid *before* a character moves.
 
 Moving does not tap a character card, but tapped character cards can’t be chosen to be moved!
 
@@ -233,9 +233,9 @@ The amount of rotation per key-press depends on the rotate setting- click on the
 When a card is “tapped”, the card is physically rotated 90 degrees and put on it's side. **Once a card is tapped, it can not be tapped again until it is refreshed**. You can't choose to take any action with your own card that would cause it to be tapped more than once. *Choose wisely*.
 
 #### Attack with a Character Card
-**You can attack with any character card by paying 1 Grist and tapping the card.** (*All* character cards can attack, and to attack *always* costs 1g, so the attack rules are not printed on each card.) Cards do *not* loose their boons after they attack.
+**You can attack with any character card by paying 1 Grist and tapping the card.** (*All* character cards can attack, and to attack *always* costs 1g, so the attack rules are not printed on each card.)
 
-When a character card attacks, compare it's current power with the power of all opponent's characters at the same location. **Any opponent's character card with less power than the attacking card is destroyed**. If an opponent's character card has *equal or greater power*, the opponent's card is *not* destroyed in an attack.
+When a character card attacks, compare it's current power with the power of all opponent's characters at the same location- the "targets". **Any opponent's character card with less power than the attacking card is destroyed**. If an opponent's character card has *equal or greater power*, the opponent's card is *not* destroyed in an attack.
 
 It's important to understand that when a character attacks, it's attacking *all* opponent's cards at that location- battles are not fought solely between two cards. **A single attack can destroy multiple cards**.
 
@@ -265,7 +265,7 @@ The trigger for abilities must be met in full before the ability's effect happen
 
 **“Xg” means an amount of grist to be paid**, just like taking the Enter, Move, or Attack options. (IE: The grist is removed to activate the ability.)
 
-“Xb” means an amount of boons that the card must have on it. **These boon triggers are not 'paid'- as in, these boons are not removed from the card**- unless the ability states otherwise. However, boon triggered abilities still must be chosen to be used. (You can choose to not activate an ability even if you have the proper trigger.) Boon Triggers only reference the boons on the character card using an ability, so you can't “borrow” or “share” boons from other cards.
+“Xb” means an amount of boons that the card must have on it. **These boon triggers are not 'paid'- as in, these boons are not removed from the card**- unless the ability states otherwise. However, boon triggered abilities still must be chosen to be used. (You can choose to not activate an ability even if you have the proper trigger.) Boon Triggers *only* reference the boons on the character card using an ability, so you can't “borrow” or “share” boons from other cards.
 
 <div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
     <h3>Advanced</h3>
@@ -336,6 +336,11 @@ Planet Cards that are destroyed can trigger Executable Cards in the Score Phase,
 
 **If a player ever earns Victory Points while their Planet Card is destroyed, they will flip their Planet Card back to the intact side, with no damage**. “Restoring” their planet card, as this is known, is an effect is triggered like an Executable.
 
+<div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
+    <h3>Advanced</h3>
+    <p>A Planet can not be Destroyed and Restored in the same Score Phase by default. “Restored” takes priority.</p>
+</div>
+
 As soon as any player reaches 7 Victory Points, the final round (known as “End Game” begins.) The Active Player will finish their turn in the Boon Phase, and then every other player will get a turn to be the Active Player. Now, the game is complete, and the player with the highest amount of Victory Points is the winner.
 
 <div class="border-4 border-dashed border-amber-500 p-4 mb-8 text-sm lg:w-2/3 mx-auto">
@@ -369,13 +374,13 @@ Every Homestuck ATCG deck must meet the following criteria:
 <ul class="list-none homestuck-list">
     <li>Total of 49 Cards</li>
     <li>Exactly 1 Planet Card</li>
-    <li>No more than 2 copies of any card with the exact same Name</li>
-    <li>The total amount of Star Value for the deck does not exceed 150</li>
+    <li>No more than 2 copies of any card with the exact same <em>Name</em></li>
+    <li>The total amount of <em>Star Value</em> for the deck does not exceed 200</li>
 </ul>
 
 A Card's *Name* is both the all-caps *TITLE* and all-lowercase *subtitle*. There is no limit on how many cards can share a TITLE, as long as there is no more than 2 cards with the exact same name.
 
-The Star Value of a card is noted on the bottom right of the card, as a picture of 1-5 stars. In the game itself, Star Value is irrelevant- **Star Value is only a metric for Deck-Building**. When you add the total amount of stars for a deck together- *including the Planet Card and any repeated cards* - the value can not exceed 150.
+The Star Value of a card is noted on the bottom right of the card, as a picture of 1-5 stars. In the game itself, Star Value is irrelevant- **Star Value is only a metric for Deck-Building**. When you add the total amount of stars for a deck together- *including the Planet Card and any repeated cards* - the value can not exceed 200.
 
 ### Moon Cards
 The second set, Paradox Space Road Trip, introduced a new type of card- *Moons*.
@@ -403,6 +408,18 @@ When you move a character from the base planet to a Moon or vice- versa, even in
 
 Moons *can* be played to destroyed planet’s orbit.
 
+### Off-Turn Play / Pestering
+
+The third set, Pesterbomb, introduces off-turn play in the form of the *Pester Asterisk.
+
+**Cards that are marked  “*Pester” can be played during another player’s Main Phase.**
+
+Cards played on another player’s Main Phase still follow all the rules as if played during their own player’s turn, except for when they are played. (**Their player must still pay their Enter cost.** Their player cannot choose to activate their ability, attack, or move them after they enter until it is their own turn.)
+
+You can still play *Pester cards on your own Main Phase, too.
+
+Cards with Executable Coding as their Enter Cost, or the triggered effect of Executable Cards, do not need the *Pester asterisk to enter or take effect on another player’s main phase, if that’s when their coding triggers.
+
 ### Asterisks
 Asterisks are a type of Game Text that reference rules outside of the printed text. They are written on a card as a keyword prefaced by an “*”.
 
@@ -410,9 +427,12 @@ Asterisks are a type of Game Text that reference rules outside of the printed te
 A player can only have 1 *Birthday card in their deck.
 
 #### *Immortality
-When a character with *Immortality would be destroyed, the character’s owner can choose to *instead* add an “Immortality Mark” to the card, and roll a six-sided dice (“d6”.) If the roll is *greater* than the amount of Immortality Marks on the card, the card is *not destroyed*.
+When a character with *Immortality would be destroyed, the character’s owner can choose to *instead* add an “Immortality Mark” to the card, and flip a coin once for each Immortality Mark on the card. If any of the coin flips come up tails, the character is destroyed.
 
 The amount of Immortality Marks on a card can also be a deciding factor for other abilities and mechanics.
+
+#### *Pester
+This card can be played on another player’s Main Phase.
 
 ## Quick Reference
 
