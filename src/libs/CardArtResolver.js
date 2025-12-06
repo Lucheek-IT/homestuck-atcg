@@ -3,7 +3,11 @@ import CardNotFound from "../images/card-not-found.svg";
 
 export default async (card, artCollection) => {
     // Most cards have 1, but planets have 2, so we're using an array to deal with em.
-    const pictureField = card.Pictures ?? card.Picture ?? '';
+    let pictureField = card.Pictures ?? card.Picture ?? '';
+    if (card['Picture (Destroyed)']) {
+        pictureField = pictureField + ' // ' + card['Picture (Destroyed)'];
+    }
+
     let cardArt = pictureField.split('//').map((pic) => artCollection[pic.trim()]);
 
     return await Promise.all(

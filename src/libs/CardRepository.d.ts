@@ -31,7 +31,8 @@ interface PlanetCard extends Card {
     'Max Damage': string,
     Power: string;
     'Draw Boost': string,
-    Pictures: string;
+    Picture: string;
+    'Picture (Destroyed)': string;
 }
 
 interface MoonCard extends Card {
