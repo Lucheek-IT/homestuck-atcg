@@ -65,11 +65,22 @@ This is build with the following components:
 - Comics Linode
   - But it's Just HTML(tm), so it can live anywhere: your linode, GitHub Pages, NeoCities, etc.
 
-### Working on the Site
+## Working on the Site
 
-<details><summary>Install Instructions (once per computer)</summary>
+<details><summary>GitHub Desktop Install Instructions (once per computer)</summary>
 
-Install NodeJS v18 or newer. 
+Install GitHub Desktop:
+
+- [Windows & MacOS](https://desktop.github.com/download/)
+- [Linux](https://github.com/shiftkey/desktop)
+
+Log into it with your GitHub account.
+
+Click `Add` -> `Clone repository...` and select `homestuck-atcg` from the list. This will download a sync-able copy of the GitHub code to your computer.
+</details>
+
+<details><summary>NodeJS Install Instructions (once per computer)</summary>
+ Install NodeJS v18 or newer. 
 
 - Windows: Standalone installer from [NodeJS.org](https://nodejs.org/en/download)
 - Linux: On Ubuntu/Debian, `sudo apt install nodejs`
@@ -86,16 +97,22 @@ npm install -g yarn
 
 </details>
 
-To start up your own copy of the site, run:
+To start up your own copy of the site, first open GitHub Desktop and pull in any changes. Once your copy is updated, run the following from the `homestuck-atcg` folder:
 
 ```sh
 yarn install
 yarn run dev
 ```
 
-The site should start on `http://localhost:4321` or something. It will tell you the correct URL. 
+The site should start on `http://localhost:4321`. It will tell you the correct URL. 
 
 Changes to the site files should be reflected in the browser immediately. The auto-refresh doesn't work for changing the card art: if you update card art, restart the site.
+
+### Publishing HTML
+>[!NOTE]
+> When GitHub is updated, this will happen automatically.
+> 
+> These instructions are here if you want to stop using the GitHub automations (or they break).
 
 If you want to compile the site to static HTML, run:
 
