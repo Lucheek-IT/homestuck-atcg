@@ -65,7 +65,7 @@ This is build with the following components:
 - Comics Linode
   - But it's Just HTML(tm), so it can live anywhere: your linode, GitHub Pages, NeoCities, etc.
 
-### Local Development
+### Working on the Site
 
 <details><summary>Install Instructions (once per computer)</summary>
 
@@ -96,6 +96,15 @@ yarn run dev
 The site should start on `http://localhost:4321` or something. It will tell you the correct URL. 
 
 Changes to the site files should be reflected in the browser immediately. The auto-refresh doesn't work for changing the card art: if you update card art, restart the site.
+
+If you want to compile the site to static HTML, run:
+
+```sh
+yarn install
+yarn run build
+```
+
+This will create a `dist/` folder. This can be published to the Comics webserver or another host with any file transfer tools (SFTP, WebDAV, whatever).
 
 ## Credits
 - Discord logo vector by [Gil Barbara](https://github.com/gilbarbara/logos). Used under the CC0 license.
