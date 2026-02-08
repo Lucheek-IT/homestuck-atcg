@@ -1,5 +1,6 @@
 # Homestuck ATCG Web
 This is a responsive website documenting the rules and cards for the Homestuck: Atypical Card Game, which lives at [hsatcg.lucheek.com](https://hsatcg.lucheek.com/).
+
 ## Usage
 There are two types of [pages](./src/pages): 
 
@@ -65,14 +66,36 @@ This is build with the following components:
   - But it's Just HTML(tm), so it can live anywhere: your linode, GitHub Pages, NeoCities, etc.
 
 ### Local Development
-If you have node/yarn installed already:
+
+<details><summary>Install Instructions (once per computer)</summary>
+
+Install NodeJS v18 or newer. 
+
+- Windows: Standalone installer from [NodeJS.org](https://nodejs.org/en/download)
+- Linux: On Ubuntu/Debian, `sudo apt install nodejs`
+- MacOS: `brew install node`
+
+Once installed, get the Yarn package manager:
+
+```sh
+# Install NodeJS first!
+
+# Then install yarn
+npm install -g yarn
+```
+
+</details>
+
+To start up your own copy of the site, run:
 
 ```sh
 yarn install
 yarn run dev
 ```
 
-The site should start on `http://localhost:4321` or something. It will tell you the correct URL. Changes should be reflected in the browser immediately.
+The site should start on `http://localhost:4321` or something. It will tell you the correct URL. 
+
+Changes to the site files should be reflected in the browser immediately. The auto-refresh doesn't work for changing the card art: if you update card art, restart the site.
 
 ## Credits
 - Discord logo vector by [Gil Barbara](https://github.com/gilbarbara/logos). Used under the CC0 license.
